@@ -36,3 +36,9 @@ jobs:
           tags: |
             docker.io/${{ vars.IMAGE_NAMESPACE }}/${{ vars.IMAGE_NAME }}latest
             docker.io/${{ vars.IMAGE_NAMESPACE }}/${{ vars.IMAGE_NAME }}:${{ github.ref_name }}
+          build-args: |
+            TZ=${{ vars.TZ }}
+            USE_ALIYUN_MIRROR=${{ vars.USE_ALIYUN_MIRROR }}
+            GOPROXY=${{ vars.GOPROXY }}
+          provenance: false
+          progress: plain
