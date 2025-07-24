@@ -3,15 +3,14 @@
 ############################################
 FROM golang:1.24.4-alpine3.22 AS build-env
 WORKDIR /mnt
-COPY index.html favicon.ico main.go go.mod  go.sum /mnt/
+COPY . /mnt/
 RUN echo 'start build'
-RUN cd /mnt/ && export GO111MODULE=on && export GOPROXY=https://goproxy.cn && CGO_ENABLED=0 go build -o WebCurl
+RUN cd /mnt/ && export GO111MODULE=on && CGO_ENABLED=0 go build -o WebCurl
 
 FROM alpine:3.22
-RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories \    
-	&& apk update \    
+RUN apk update \
 	&& apk add --no-cache tzdata \
-	&& cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
+	&& cp /usr/share/zoneinfo/Asia/Taipei /etc/localtime \
 	&& mkdir -p /usr/local/WebCurl
 COPY --from=build-env /mnt/WebCurl /usr/local/WebCurl
 WORKDIR /usr/local/WebCurl
