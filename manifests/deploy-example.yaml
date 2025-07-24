@@ -1,0 +1,80 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: webcurl
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webcurl
+  namespace: webcurl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: webcurl
+  template:
+    metadata:
+      labels:
+        app: webcurl
+    spec:
+      containers:
+      - name: webcurl
+        image: juouyang/webcurl:main
+        ports:
+        - containerPort: 4444
+        resources:
+          limits:
+            cpu: "500m"
+            memory: "500Mi"
+          requests:
+            cpu: "10m"
+            memory: "10Mi"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: webcurl
+  namespace: webcurl
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: 4444
+  selector:
+    app: webcurl
+# ---
+# apiVersion: v1
+# kind: Secret
+# metadata:
+#   name: webcurl-htpasswd
+#   namespace: webcurl
+# type: nginx.org/htpasswd
+# stringData:
+#   htpasswd: |
+#     foo:$apr1$T6zUs/pB$xvCvBUfMvvIk8r12lZz9C0
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: webcurl
+  namespace: webcurl
+  # annotations:
+  #   nginx.org/basic-auth-secret: "webcurl-htpasswd"
+  #   nginx.org/basic-auth-realm: "Authentication Required"
+spec:
+  ingressClassName: nginx                     # ⚠️ 請視實際 ingressClass 調整
+  rules:
+  - host: webcurl.yourdomain.com              # ⚠️ 請將此改為你實際使用的網域
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: webcurl
+            port:
+              number: 80
+  tls:
+  - hosts:
+    - webcurl.yourdomain.com

@@ -6,7 +6,7 @@
     <title>WebTools</title>
     <style>
         body {
-            font-family: "微软雅黑", Arial, sans-serif;
+            font-family: "微軟雅黑", Arial, sans-serif;
             background: #fafbfc;
             margin: 0;
             padding: 0;
@@ -99,7 +99,7 @@
         }
 
         .tab-content {
-            /* 保持原有内容样式 */
+            /* 保持原有內容樣式 */
         }
     </style>
 </head>
@@ -109,7 +109,7 @@
         <div class="tab-bar">
             <button class="tab-btn active" onclick="showTab('jwt')">JWT解析</button>
             <button class="tab-btn" onclick="showTab('uuid')">UUID生成</button>
-            <button class="tab-btn" onclick="showTab('time')">时间戳转换</button>
+            <button class="tab-btn" onclick="showTab('time')">時間戳轉換</button>
             <button class="tab-btn" onclick="showTab('base64')">Base64工具</button>
             <button class="tab-btn" onclick="showTab('token')">Token生成器</button>
         </div>
@@ -117,17 +117,17 @@
         <!-- JWT解析 -->
         <div id="tab-jwt" class="tab-content">
             <h2>JWT解析</h2>
-            <textarea id="jwtInput" rows="3" placeholder="请输入JWT字符串"></textarea>
+            <textarea id="jwtInput" rows="3" placeholder="請輸入JWT字符串"></textarea>
             <div>
                 <button onclick="WebTools.parseJWT()">解析</button>
                 <button onclick="document.getElementById('jwtInput').value='';WebTools.clearJWTResult();">清空</button>
             </div>
             <div>
-                <label>Header(头部)</label>
+                <label>Header(頭部)</label>
                 <div class="result" id="jwtHeader"></div>
             </div>
             <div>
-                <label>Payload(载荷)</label>
+                <label>Payload(載荷)</label>
                 <div class="result" id="jwtPayload"></div>
             </div>
         </div>
@@ -138,79 +138,79 @@
             <div class="row">
                 <input type="number" id="uuidCount" min="1" max="100" value="3" style="max-width:80px;">
                 <button onclick="WebTools.generateUUIDs()">生成UUID</button>
-                <button onclick="WebTools.copyUUIDs()">复制全部</button>
+                <button onclick="WebTools.copyUUIDs()">覆制全部</button>
             </div>
             <textarea id="uuidResult" rows="3" readonly></textarea>
         </div>
 
-        <!-- 时间戳转换 -->
+        <!-- 時間戳轉換 -->
         <div id="tab-time" class="tab-content" style="display:none;">
-            <h2>时间戳转换</h2>
+            <h2>時間戳轉換</h2>
             <div class="row">
-                <input type="text" id="timestampInput" placeholder="输入时间戳(支持秒/毫秒)">
-                <button onclick="WebTools.timestampToDate()">转为日期</button>
+                <input type="text" id="timestampInput" placeholder="輸入時間戳(支持秒/毫秒)">
+                <button onclick="WebTools.timestampToDate()">轉為日期</button>
             </div>
             <div class="row">
-                <input type="text" id="dateInput" placeholder="输入日期(如2025-07-10 10:23:33)">
-                <button onclick="WebTools.dateToTimestamp()">转为时间戳</button>
+                <input type="text" id="dateInput" placeholder="輸入日期(如2025-07-10 10:23:33)">
+                <button onclick="WebTools.dateToTimestamp()">轉為時間戳</button>
             </div>
             <div>
-                <button onclick="WebTools.showNow()">当前时间/时间戳</button>
+                <button onclick="WebTools.showNow()">當前時間/時間戳</button>
             </div>
             <div class="result" id="timeResult"></div>
         </div>
 
-        <!-- Base64 编码解码 -->
+        <!-- Base64 編碼解碼 -->
         <div id="tab-base64" class="tab-content" style="display:none;">
-            <h2>Base64 编码/解码</h2>
+            <h2>Base64 編碼/解碼</h2>
             <div>
                 <label>原始文本:</label>
-                <textarea id="base64Input" rows="3" placeholder="请输入要编码或解码的文本..."></textarea>
+                <textarea id="base64Input" rows="3" placeholder="請輸入要編碼或解碼的文本..."></textarea>
                 <div>
-                    <button onclick="WebTools.encodeBase64()">编码</button>
-                    <button onclick="WebTools.decodeBase64()">解码</button>
-                    <button onclick="WebTools.copyBase64Result()">复制结果</button>
+                    <button onclick="WebTools.encodeBase64()">編碼</button>
+                    <button onclick="WebTools.decodeBase64()">解碼</button>
+                    <button onclick="WebTools.copyBase64Result()">覆制結果</button>
                     <button onclick="WebTools.clearBase64()">清空</button>
                 </div>
-                <label>编码/解码结果:</label>
+                <label>編碼/解碼結果:</label>
                 <textarea id="base64Result" rows="3" readonly></textarea>
             </div>
             <div style="margin-top:16px;">
-                <label>文件转Base64:</label>
+                <label>文件轉Base64:</label>
                 <input type="file" id="fileInput" onchange="WebTools.fileToBase64(event)">
                 <div id="fileBase64Area" style="margin-top:8px;"></div>
             </div>
             <div style="margin-top:16px;">
-                <label>Base64转文件:</label>
-                <input type="text" id="fileNameInput" placeholder="还原文件名，如 test.pdf" style="max-width:200px;">
-                <button onclick="WebTools.base64ToFile()">解码为文件并下载</button>
+                <label>Base64轉文件:</label>
+                <input type="text" id="fileNameInput" placeholder="還原文件名，如 test.pdf" style="max-width:200px;">
+                <button onclick="WebTools.base64ToFile()">解碼為文件並下載</button>
             </div>
         </div>
 
         <!-- Token生成器 -->
         <div id="tab-token" class="tab-content" style="display:none;">
             <h2>Token 生成器</h2>
-            <div style="color:#666;margin-bottom:12px;">使用您想要的字符，大写或小写字母、数字和/或符号生成随机字符串。</div>
+            <div style="color:#666;margin-bottom:12px;">使用您想要的字符，大寫或小寫字母、數字和/或符號生成隨機字符串。</div>
             <div class="row" style="margin-bottom:8px;">
                 <input type="checkbox" id="tokenUpper" checked style="width:32px;height:20px;"
                     onchange="WebTools.refreshToken()">
-                <label style="flex:unset;width:180px;">大写 (ABC...)</label>
+                <label style="flex:unset;width:180px;">大寫 (ABC...)</label>
 
                 <input type="checkbox" id="tokenNumber" checked style="width:32px;height:20px;"
                     onchange="WebTools.refreshToken()">
-                <label style="flex:unset;width:180px;">数字 (123...)</label>
+                <label style="flex:unset;width:180px;">數字 (123...)</label>
 
                 <input type="checkbox" id="tokenLower" checked style="width:32px;height:20px;"
                     onchange="WebTools.refreshToken()">
-                <label style="flex:unset;width:180px;">小写 (abc...)</label>
+                <label style="flex:unset;width:180px;">小寫 (abc...)</label>
 
                 <input type="checkbox" id="tokenSymbol" style="width:32px;height:20px;"
                     onchange="WebTools.refreshToken()">
-                <label style="flex:unset;width:180px;">符号 (!...)</label>
+                <label style="flex:unset;width:180px;">符號 (!...)</label>
             </div>
 
             <div class="row" style="margin-bottom:8px;align-items:center;">
-                <label style="flex:unset;width:60px;">长度</label>
+                <label style="flex:unset;width:60px;">長度</label>
                 <input type="range" id="tokenLength" min="1" max="2048" value="32" style="flex:2;"
                     oninput="WebTools.onTokenLengthChange(this)">
                 <input type="number" id="tokenLengthInput" min="1" max="2048" value="32"
@@ -220,7 +220,7 @@
             </div>
             <textarea id="tokenResult" rows="10" readonly style="margin-bottom:8px;"></textarea>
             <div>
-                <button onclick="WebTools.copyToken()">复制</button>
+                <button onclick="WebTools.copyToken()">覆制</button>
                 <button onclick="WebTools.refreshToken()">刷新</button>
             </div>
         </div>
@@ -228,9 +228,9 @@
 
     <script>
         class WebTools {
-            // ================= JWT解析相关 =================
+            // ================= JWT解析相關 =================
             /**
-             * 解析JWT字符串，分离header和payload并显示
+             * 解析JWT字符串，分離header和payload並顯示
              */
             static parseJWT() {
                 const input = document.getElementById('jwtInput').value.trim();
@@ -238,7 +238,7 @@
                 if (!input) return;
                 const parts = input.split('.');
                 if (parts.length < 2) {
-                    document.getElementById('jwtHeader').textContent = '格式错误';
+                    document.getElementById('jwtHeader').textContent = '格式錯誤';
                     return;
                 }
                 try {
@@ -247,12 +247,12 @@
                     document.getElementById('jwtHeader').textContent = JSON.stringify(header, null, 2);
                     document.getElementById('jwtPayload').textContent = JSON.stringify(payload, null, 2);
                 } catch (e) {
-                    document.getElementById('jwtHeader').textContent = '解析失败: ' + e.message;
+                    document.getElementById('jwtHeader').textContent = '解析失敗: ' + e.message;
                 }
             }
 
             /**
-             * base64url转base64并解码
+             * base64url轉base64並解碼
              */
             static decodeBase64Url(str) {
                 str = str.replace(/-/g, '+').replace(/_/g, '/');
@@ -261,16 +261,16 @@
             }
 
             /**
-             * 清空JWT解析结果显示
+             * 清空JWT解析結果顯示
              */
             static clearJWTResult() {
                 document.getElementById('jwtHeader').textContent = '';
                 document.getElementById('jwtPayload').textContent = '';
             }
 
-            // ================= UUID生成相关 =================
+            // ================= UUID生成相關 =================
             /**
-             * 生成指定数量的UUID并显示
+             * 生成指定數量的UUID並顯示
              */
             static generateUUIDs() {
                 const count = Math.max(1, Math.min(100, parseInt(document.getElementById('uuidCount').value) || 1));
@@ -282,16 +282,16 @@
             }
 
             /**
-             * 复制UUID结果到剪贴板
+             * 覆制UUID結果到剪貼板
              */
             static copyUUIDs() {
                 const text = document.getElementById('uuidResult').value;
                 if (text) navigator.clipboard.writeText(text);
             }
 
-            // ================= 时间戳转换相关 =================
+            // ================= 時間戳轉換相關 =================
             /**
-             * 格式化Date对象为 yyyy-MM-dd HH:mm:ss 字符串
+             * 格式化Date對象為 yyyy-MM-dd HH:mm:ss 字符串
              */
             static formatDate(date) {
                 const pad = n => n.toString().padStart(2, '0');
@@ -299,54 +299,54 @@
             }
 
             /**
-             * 将时间戳转为日期字符串并显示
+             * 將時間戳轉為日期字符串並顯示
              */
             static timestampToDate() {
                 const input = document.getElementById('timestampInput').value.trim();
                 if (!input) return;
                 let ts = Number(input);
                 if (isNaN(ts)) {
-                    document.getElementById('timeResult').textContent = '请输入有效的时间戳';
+                    document.getElementById('timeResult').textContent = '請輸入有效的時間戳';
                     return;
                 }
                 if (ts < 1e11) ts *= 1000;
                 const date = new Date(ts);
                 if (isNaN(date.getTime())) {
-                    document.getElementById('timeResult').textContent = '无效时间戳';
+                    document.getElementById('timeResult').textContent = '無效時間戳';
                     return;
                 }
                 document.getElementById('timeResult').textContent =
-                    `北京时间:${WebTools.formatDate(date)}\nISO格式:${date.toISOString()}`;
+                    `北京時間:${WebTools.formatDate(date)}\nISO格式:${date.toISOString()}`;
             }
 
             /**
-             * 将日期字符串转为时间戳并显示
+             * 將日期字符串轉為時間戳並顯示
              */
             static dateToTimestamp() {
                 const input = document.getElementById('dateInput').value.trim();
                 if (!input) return;
                 let date = new Date(input.replace(' ', 'T'));
                 if (isNaN(date.getTime())) {
-                    document.getElementById('timeResult').textContent = '无效日期格式';
+                    document.getElementById('timeResult').textContent = '無效日期格式';
                     return;
                 }
                 document.getElementById('timeResult').textContent =
-                    `时间戳(毫秒):${date.getTime()}\n时间戳(秒):${Math.floor(date.getTime() / 1000)}`;
+                    `時間戳(毫秒):${date.getTime()}\n時間戳(秒):${Math.floor(date.getTime() / 1000)}`;
             }
 
             /**
-             * 显示当前时间和时间戳
+             * 顯示當前時間和時間戳
              */
             static showNow() {
                 const now = new Date();
                 document.getElementById('timeResult').textContent =
-                    `当前北京时间:${WebTools.formatDate(now)}\n` +
-                    `当前时间戳(毫秒):${now.getTime()}\n当前时间戳(秒):${Math.floor(now.getTime() / 1000)}`;
+                    `當前北京時間:${WebTools.formatDate(now)}\n` +
+                    `當前時間戳(毫秒):${now.getTime()}\n當前時間戳(秒):${Math.floor(now.getTime() / 1000)}`;
             }
 
-            // ================= Base64相关 =================
+            // ================= Base64相關 =================
             /**
-             * 对输入内容进行Base64编码
+             * 對輸入內容進行Base64編碼
              */
             static encodeBase64() {
                 const input = document.getElementById('base64Input').value;
@@ -354,12 +354,12 @@
                     const encoded = btoa(unescape(encodeURIComponent(input)));
                     document.getElementById('base64Result').value = encoded;
                 } catch (e) {
-                    document.getElementById('base64Result').value = '编码失败: ' + e.message;
+                    document.getElementById('base64Result').value = '編碼失敗: ' + e.message;
                 }
             }
 
             /**
-             * 对输入内容进行Base64解码
+             * 對輸入內容進行Base64解碼
              */
             static decodeBase64() {
                 const input = document.getElementById('base64Input').value;
@@ -367,12 +367,12 @@
                     const decoded = decodeURIComponent(escape(window.atob(input)));
                     document.getElementById('base64Result').value = decoded;
                 } catch (e) {
-                    document.getElementById('base64Result').value = '解码失败: ' + e.message;
+                    document.getElementById('base64Result').value = '解碼失敗: ' + e.message;
                 }
             }
 
             /**
-             * 复制Base64结果到剪贴板
+             * 覆制Base64結果到剪貼板
              */
             static copyBase64Result() {
                 const text = document.getElementById('base64Result').value;
@@ -380,7 +380,7 @@
             }
 
             /**
-             * 清空Base64输入和结果
+             * 清空Base64輸入和結果
              */
             static clearBase64() {
                 document.getElementById('base64Input').value = '';
@@ -388,7 +388,7 @@
             }
 
             /**
-             * 文件转Base64字符串并显示
+             * 文件轉Base64字符串並顯示
              */
             static fileToBase64(event) {
                 const file = event.target.files[0];
@@ -404,13 +404,13 @@
             }
 
             /**
-             * Base64字符串转文件并下载
+             * Base64字符串轉文件並下載
              */
             static base64ToFile() {
                 let base64 = document.getElementById('base64Input').value.trim();
                 const fileName = document.getElementById('fileNameInput').value.trim() || 'download.bin';
                 if (!base64) {
-                    alert('请输入Base64字符串');
+                    alert('請輸入Base64字符串');
                     return;
                 }
                 let arr = base64.match(/^data:(.*?);base64,(.*)$/);
@@ -422,7 +422,7 @@
                 try {
                     bstr = atob(base64);
                 } catch (e) {
-                    alert('Base64格式错误');
+                    alert('Base64格式錯誤');
                     return;
                 }
                 let u8arr = new Uint8Array(bstr.length);
@@ -437,9 +437,9 @@
                 URL.revokeObjectURL(a.href);
             }
 
-            // ================= Token生成器相关 =================
+            // ================= Token生成器相關 =================
             /**
-             * 获取Token生成器的字符集
+             * 獲取Token生成器的字符集
              */
             static getTokenCharset() {
                 let charset = '';
@@ -457,7 +457,7 @@
                 const len = parseInt(document.getElementById('tokenLength').value);
                 const charset = WebTools.getTokenCharset();
                 if (!charset) {
-                    document.getElementById('tokenResult').value = '请至少选择一种字符类型';
+                    document.getElementById('tokenResult').value = '請至少選擇一種字符類型';
                     return;
                 }
                 let arr = new Uint32Array(len);
@@ -470,7 +470,7 @@
             }
 
             /**
-             * 复制Token结果到剪贴板
+             * 覆制Token結果到剪貼板
              */
             static copyToken() {
                 const text = document.getElementById('tokenResult').value;
@@ -478,7 +478,7 @@
             }
 
             /**
-             * 滑块变化时同步到输入框并刷新Token
+             * 滑塊變化時同步到輸入框並刷新Token
              */
             static onTokenLengthChange(el) {
                 document.getElementById('tokenLengthInput').value = el.value;
@@ -486,7 +486,7 @@
             }
 
             /**
-             * 输入框变化时同步到滑块并刷新Token
+             * 輸入框變化時同步到滑塊並刷新Token
              */
             static onTokenLengthInputChange(el) {
                 let v = el.value.replace(/[^\d]/g, '');
@@ -498,7 +498,7 @@
             }
         }
 
-        // 页面加载后直接刷新一次
+        // 頁面加載後直接刷新一次
         WebTools.refreshToken();
 
         function showTab(tab) {

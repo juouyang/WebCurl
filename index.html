@@ -361,7 +361,7 @@
             height: 36px;
         }
 
-        /* 按钮样式优化 */
+        /* 按鈕樣式優化 */
         .btn-primary {
             background-color: #4CAF50;
         }
@@ -374,7 +374,7 @@
             background-color: #f44336;
         }
 
-        /* 容器样式 */
+        /* 容器樣式 */
         .container-hidden {
             display: none;
         }
@@ -383,7 +383,7 @@
             margin-top: 10px;
         }
 
-        /* 输入框样式 */
+        /* 輸入框樣式 */
         .input-full-width {
             width: 100%;
         }
@@ -400,7 +400,7 @@
             width: 60%;
         }
 
-        /* 表格样式 */
+        /* 表格樣式 */
         .table-col-enable {
             width: 50px;
         }
@@ -409,7 +409,7 @@
             width: 80px;
         }
 
-        /* 文本域样式 */
+        /* 文本域樣式 */
         .textarea-body {
             width: 100%;
             height: 150px;
@@ -417,7 +417,7 @@
             resize: vertical;
         }
 
-        /* 文件输入框样式 */
+        /* 文件輸入框樣式 */
         .file-input-binary {
             width: 100%;
             height: 36px;
@@ -430,17 +430,17 @@
             width: 180px;
         }
 
-        /* 选择框样式 */
+        /* 選擇框樣式 */
         .select-formdata-type {
             width: 30px;
         }
 
-        /* 分隔线样式 */
+        /* 分隔線樣式 */
         .divider {
             margin: 15px 0;
         }
 
-        /* 设置输入框样式 */
+        /* 設置輸入框樣式 */
         .setting-input {
             width: 100%;
         }
@@ -451,7 +451,7 @@
             margin-top: 5px;
         }
 
-        /* 集合选择器样式 */
+        /* 集合選擇器樣式 */
         .collection-selector {
             margin-bottom: 10px;
             display: flex;
@@ -459,12 +459,12 @@
             gap: 8px;
         }
 
-        /* 文件输入框默认隐藏 */
+        /* 文件輸入框默認隱藏 */
         .file-input {
             display: none;
         }
 
-        /* 表单备注样式 */
+        /* 表單備注樣式 */
         .form-remark {
             width: 80px;
         }
@@ -803,7 +803,7 @@
             background-color: #d32f2f;
         }
 
-        /* 多行请求体样式 */
+        /* 多行請求體樣式 */
         .body-row {
             display: flex;
             gap: 10px;
@@ -868,7 +868,7 @@
             background-color: #f44336;
         }
 
-        /* JSON格式化高亮样式 */
+        /* JSON格式化高亮樣式 */
         .json-formatted {
             background: #f5f5f5;
             color: #222;
@@ -1000,23 +1000,23 @@
     <div class="content-wrapper">
         <div class="aside">
             <div class="global-actions">
-                <button class="global-export-btn" onclick="exportAllConfig()">导出全部配置</button>
-                <button class="global-import-btn" onclick="importAllConfig()">导入全部配置</button>
-                <button class="settings-btn" onclick="openSettings()">请求配置</button>
+                <button class="global-export-btn" onclick="exportAllConfig()">導出全部配置</button>
+                <button class="global-import-btn" onclick="importAllConfig()">導入全部配置</button>
+                <button class="settings-btn" onclick="openSettings()">請求配置</button>
                 <button class="settings-btn" onclick="window.open('/tool.html')">常用工具</button>
             </div>
             <div class="panel-tabs">
-                <div class="panel-tab active" onclick="switchPanelTab('history')">历史</div>
+                <div class="panel-tab active" onclick="switchPanelTab('history')">歷史</div>
                 <div class="panel-tab" onclick="switchPanelTab('apis')">接口</div>
-                <div class="panel-tab" onclick="switchPanelTab('variables')">变量</div>
-                <div class="panel-tab" onclick="switchPanelTab('globalHeaders')">全局头</div>
+                <div class="panel-tab" onclick="switchPanelTab('variables')">變量</div>
+                <div class="panel-tab" onclick="switchPanelTab('globalHeaders')">全局頭</div>
             </div>
             <div id="historyPanel" class="panel-content active">
                 <div class="history-header">
                     <div class="btn-group">
-                        <button class="clear-history-btn" onclick="clearHistory()">清空历史</button>
-                        <button class="import-btn" onclick="importHistory()">导入历史</button>
-                        <button class="export-btn" onclick="exportHistory()">导出历史</button>
+                        <button class="clear-history-btn" onclick="clearHistory()">清空歷史</button>
+                        <button class="import-btn" onclick="importHistory()">導入歷史</button>
+                        <button class="export-btn" onclick="exportHistory()">導出歷史</button>
                     </div>
                 </div>
                 <div id="historyList"></div>
@@ -1025,8 +1025,8 @@
                 <div class="history-header">
                     <div class="btn-group">
                         <button class="clear-history-btn" onclick="clearApis()">清空列表</button>
-                        <button class="import-btn" onclick="importApis()">导入接口</button>
-                        <button class="export-btn" onclick="exportApis()">导出接口</button>
+                        <button class="import-btn" onclick="importApis()">導入接口</button>
+                        <button class="export-btn" onclick="exportApis()">導出接口</button>
                     </div>
                 </div>
                 <!-- 集合管理UI -->
@@ -1034,56 +1034,56 @@
                     <label>集合：</label>
                     <select id="apiCollectionSelect" onchange="switchApiCollection()"></select>
                     <button onclick="addApiCollection()">新增集合</button>
-                    <button onclick="removeApiCollection()">删除集合</button>
+                    <button onclick="removeApiCollection()">刪除集合</button>
                 </div>
                 <div id="apisList"></div>
             </div>
             <div id="variablesPanel" class="panel-content">
                 <div class="history-header">
                     <div class="btn-group">
-                        <button class="clear-history-btn" onclick="clearVariables()">清空变量</button>
-                        <button class="import-btn" onclick="importVariables()">导入变量</button>
-                        <button class="export-btn" onclick="exportVariables()">导出变量</button>
+                        <button class="clear-history-btn" onclick="clearVariables()">清空變量</button>
+                        <button class="import-btn" onclick="importVariables()">導入變量</button>
+                        <button class="export-btn" onclick="exportVariables()">導出變量</button>
                     </div>
                 </div>
                 <div class="variables-table-container">
                     <table class="variables-table">
                         <thead>
                             <tr>
-                                <th class="table-col-enable">启用</th>
-                                <th>变量名</th>
-                                <th>变量值</th>
+                                <th class="table-col-enable">啟用</th>
+                                <th>變量名</th>
+                                <th>變量值</th>
                                 <th class="table-col-action">操作</th>
                             </tr>
                         </thead>
                         <tbody id="variablesTableBody"></tbody>
                     </table>
-                    <button class="add-row-btn" onclick="addVariableRow()">添加变量</button>
-                    <button class="save-btn btn-primary" onclick="saveVariables()">保存变量</button>
+                    <button class="add-row-btn" onclick="addVariableRow()">添加變量</button>
+                    <button class="save-btn btn-primary" onclick="saveVariables()">保存變量</button>
                 </div>
             </div>
             <div id="globalHeadersPanel" class="panel-content">
                 <div class="history-header">
                     <div class="btn-group">
-                        <button class="clear-history-btn" onclick="clearGlobalHeaders()">清空全局头</button>
-                        <button class="import-btn" onclick="importGlobalHeaders()">导入全局头</button>
-                        <button class="export-btn" onclick="exportGlobalHeaders()">导出全局头</button>
+                        <button class="clear-history-btn" onclick="clearGlobalHeaders()">清空全局頭</button>
+                        <button class="import-btn" onclick="importGlobalHeaders()">導入全局頭</button>
+                        <button class="export-btn" onclick="exportGlobalHeaders()">導出全局頭</button>
                     </div>
                 </div>
                 <div class="variables-table-container">
                     <table class="variables-table">
                         <thead>
                             <tr>
-                                <th class="table-col-enable">启用</th>
-                                <th>请求头</th>
-                                <th>请求值</th>
+                                <th class="table-col-enable">啟用</th>
+                                <th>請求頭</th>
+                                <th>請求值</th>
                                 <th class="table-col-action">操作</th>
                             </tr>
                         </thead>
                         <tbody id="globalHeadersTableBody"></tbody>
                     </table>
-                    <button class="add-row-btn" onclick="addGlobalHeaderRow()">添加全局头</button>
-                    <button class="save-btn btn-primary" onclick="saveGlobalHeaders()">保存全局头</button>
+                    <button class="add-row-btn" onclick="addGlobalHeaderRow()">添加全局頭</button>
+                    <button class="save-btn btn-primary" onclick="saveGlobalHeaders()">保存全局頭</button>
                 </div>
             </div>
         </div>
@@ -1105,28 +1105,28 @@
                             <option>WS</option>
                             <option>SSE</option>
                         </select>
-                        <input type="url" id="url" placeholder="输入请求URL" value="" />
+                        <input type="url" id="url" placeholder="輸入請求URL" value="" />
                         <button onclick="saveToApis()" class="btn-secondary">保存</button>
-                        <button id="downloadBtn" onclick="sendRequestAndDownload()" class="btn-secondary">下载</button>
-                        <button id="sendBtn" onclick="sendRequest()">发送请求</button>
+                        <button id="downloadBtn" onclick="sendRequestAndDownload()" class="btn-secondary">下載</button>
+                        <button id="sendBtn" onclick="sendRequest()">發送請求</button>
                     </div>
 
                     <div class="tabs">
-                        <div class="tab active" onclick="switchTab('headers')">请求头</div>
-                        <div class="tab" onclick="switchTab('body')">请求体</div>
+                        <div class="tab active" onclick="switchTab('headers')">請求頭</div>
+                        <div class="tab" onclick="switchTab('body')">請求體</div>
                     </div>
 
                     <div id="headersTab" class="tab-content active">
                         <div id="headersList">
                             <div class="header-row">
                                 <input type="checkbox" checked>
-                                <input type="text" placeholder="Header名称" />
+                                <input type="text" placeholder="Header名稱" />
                                 <input type="text" placeholder="Header值" />
-                                <input type="text" placeholder="备注" class="header-remark input-remark" />
-                                <button class="remove-btn" onclick="removeHeader(this)">删除</button>
+                                <input type="text" placeholder="備注" class="header-remark input-remark" />
+                                <button class="remove-btn" onclick="removeHeader(this)">刪除</button>
                             </div>
                         </div>
-                        <button onclick="addHeader()">添加请求头</button>
+                        <button onclick="addHeader()">添加請求頭</button>
                     </div>
 
                     <div id="bodyTab" class="tab-content">
@@ -1134,7 +1134,7 @@
                             <label>
                                 <input type="radio" name="bodyType" value="none" checked
                                     onchange="updateBodyType(this.value)">
-                                <span>无请求体</span>
+                                <span>無請求體</span>
                             </label>
                             <label>
                                 <input type="radio" name="bodyType" value="json" onchange="updateBodyType(this.value)">
@@ -1188,20 +1188,20 @@
                         </div>
                         <div id="formContainer" class="container-hidden container-margin-top">
                             <div id="formRows"></div>
-                            <button onclick="addFormRow()" class="add-row-btn">添加表单项</button>
+                            <button onclick="addFormRow()" class="add-row-btn">添加表單項</button>
                         </div>
                         <div id="wsControls" class="container-hidden container-margin-top">
-                            <input type="text" id="wsSendInput" placeholder="输入要发送的消息" class="input-ws-send">
-                            <button id="wsSendBtn" class="add-row-btn">发送</button>
-                            <button id="wsCloseBtn" class="add-row-btn">关闭连接</button>
+                            <input type="text" id="wsSendInput" placeholder="輸入要發送的消息" class="input-ws-send">
+                            <button id="wsSendBtn" class="add-row-btn">發送</button>
+                            <button id="wsCloseBtn" class="add-row-btn">關閉連接</button>
                         </div>
                         <div id="wsBodyContainer" class="container-hidden container-margin-top">
                             <div id="wsBodyRows"></div>
                             <div class="ws-body-actions">
                                 <button class="add-row-btn" onclick="addWsBodyRow()" type="button">添加行</button>
                                 <button class="add-row-btn" onclick="if (currentWS) currentWS.close();"
-                                    type="button">断开连接</button>
-                                <button class="add-row-btn" onclick="sendWsBody()" type="button">发送</button>
+                                    type="button">斷開連接</button>
+                                <button class="add-row-btn" onclick="sendWsBody()" type="button">發送</button>
                             </div>
                         </div>
                     </div>
@@ -1210,14 +1210,14 @@
                 <div class="response-section">
                     <div class="response-info" id="responseInfo"></div>
                     <div class="response-tabs">
-                        <div class="response-tab active" onclick="switchResponseTab('headers')">响应头</div>
-                        <div class="response-tab" onclick="switchResponseTab('body')">响应体</div>
+                        <div class="response-tab active" onclick="switchResponseTab('headers')">響應頭</div>
+                        <div class="response-tab" onclick="switchResponseTab('body')">響應體</div>
                     </div>
                     <div id="headersContent" class="response-tab-content active">
                         <table class="headers-table" id="responseHeaders">
                             <thead>
                                 <tr>
-                                    <th>名称</th>
+                                    <th>名稱</th>
                                     <th>值</th>
                                 </tr>
                             </thead>
@@ -1226,12 +1226,12 @@
                     </div>
                     <div id="bodyContent" class="response-tab-content">
                         <div class="response-actions">
-                            <button onclick="copyResponse()">复制响应内容</button>
-                            <button onclick="clearResponse()">清空响应内容</button>
+                            <button onclick="copyResponse()">覆制響應內容</button>
+                            <button onclick="clearResponse()">清空響應內容</button>
                             <button id="formatJsonBtn" onclick="formatJsonResponse()"
                                 class="container-hidden">格式化JSON</button>
                             <button id="copyFormattedBtn" onclick="copyFormattedJson()"
-                                class="container-hidden">复制格式化JSON</button>
+                                class="container-hidden">覆制格式化JSON</button>
                         </div>
                         <div id="jsonFormattedContainer" class="container-hidden"></div>
                         <textarea id="responseBody" readonly></textarea>
@@ -1243,10 +1243,10 @@
 
     <div class="dialog-overlay" id="dialogOverlay"></div>
     <div class="settings-dialog" id="settingsDialog">
-        <h3>请求配置</h3>
+        <h3>請求配置</h3>
         <div class="settings-group">
 
-            <label>缺省请求协议 (default_protocol)</label>
+            <label>缺省請求協議 (default_protocol)</label>
             <select id="settingDefaultProtocol">
                 <option value="http">http</option>
                 <option value="https">https</option>
@@ -1254,91 +1254,91 @@
                 <option value="wss">wss</option>
             </select>
 
-            <label>是否验证SSL (verify_ssl)</label>
+            <label>是否驗證SSL (verify_ssl)</label>
             <select id="settingVerifySSL">
-                <option value="Y">Y - 验证SSL</option>
-                <option value="N">N - 不验证SSL</option>
+                <option value="Y">Y - 驗證SSL</option>
+                <option value="N">N - 不驗證SSL</option>
             </select>
 
-            <label>是否自动跟随重定向 (follow_redirect)</label>
+            <label>是否自動跟隨重定向 (follow_redirect)</label>
             <select id="settingFollowRedirect">
-                <option value="Y">Y - 自动跟随</option>
-                <option value="N">N - 不跟随</option>
+                <option value="Y">Y - 自動跟隨</option>
+                <option value="N">N - 不跟隨</option>
             </select>
 
-            <label>请求超时时间 (秒, time_out)</label>
-            <input type="number" id="settingTimeout" min="0" placeholder="0为不超时" class="setting-input">
+            <label>請求超時時間 (秒, time_out)</label>
+            <input type="number" id="settingTimeout" min="0" placeholder="0為不超時" class="setting-input">
 
-            <label>请求重试次数 (retry_count)</label>
-            <input type="number" id="settingRetryCount" min="0" placeholder="0为不重试" class="setting-input">
+            <label>請求重試次數 (retry_count)</label>
+            <input type="number" id="settingRetryCount" min="0" placeholder="0為不重試" class="setting-input">
 
-            <label>请求重试间隔 (秒, retry_delay)</label>
-            <input type="number" id="settingRetryDelay" min="0" placeholder="0为无间隔" class="setting-input">
+            <label>請求重試間隔 (秒, retry_delay)</label>
+            <input type="number" id="settingRetryDelay" min="0" placeholder="0為無間隔" class="setting-input">
 
-            <label>SSE事件类型列表 (逗号分隔)</label>
+            <label>SSE事件類型列表 (逗號分隔)</label>
             <input type="text" id="settingSseEventTypes" placeholder="例如: update,info,warn" class="setting-input">
 
             <hr class="divider">
 
-            <label>缓存策略 (cache)</label>
+            <label>緩存策略 (cache)</label>
             <select id="settingCache">
-                <option value="default">default - 默认，先在缓存里面寻找匹配的请求</option>
-                <option value="no-store">no-store - 直接请求远程服务器，不更新缓存</option>
-                <option value="reload">reload - 直接请求远程服务器，更新缓存</option>
-                <option value="no-cache">no-cache - 将服务器资源跟本地缓存进行比较</option>
-                <option value="force-cache">force-cache - 缓存优先</option>
-                <option value="only-if-cached">only-if-cached - 只检查缓存</option>
+                <option value="default">default - 默認，先在緩存里面尋找匹配的請求</option>
+                <option value="no-store">no-store - 直接請求遠程服務器，不更新緩存</option>
+                <option value="reload">reload - 直接請求遠程服務器，更新緩存</option>
+                <option value="no-cache">no-cache - 將服務器資源跟本地緩存進行比較</option>
+                <option value="force-cache">force-cache - 緩存優先</option>
+                <option value="only-if-cached">only-if-cached - 只檢查緩存</option>
             </select>
 
-            <label>请求模式 (mode)</label>
+            <label>請求模式 (mode)</label>
             <select id="settingMode">
-                <option value="cors">cors - 允许跨域请求</option>
-                <option value="same-origin">same-origin - 只允许同源请求</option>
-                <option value="no-cors">no-cors - 仅限简单请求方法和标头</option>
+                <option value="cors">cors - 允許跨域請求</option>
+                <option value="same-origin">same-origin - 只允許同源請求</option>
+                <option value="no-cors">no-cors - 僅限簡單請求方法和標頭</option>
                 <option value="navigate">navigate - navigate</option>
             </select>
 
-            <label>发送凭证 (credentials)</label>
+            <label>發送憑證 (credentials)</label>
             <select id="settingCredentials">
-                <option value="same-origin">same-origin - 同源发送Cookie</option>
-                <option value="include">include - 同源和跨域都发送Cookie</option>
-                <option value="omit">omit - 不发送Cookie</option>
+                <option value="same-origin">same-origin - 同源發送Cookie</option>
+                <option value="include">include - 同源和跨域都發送Cookie</option>
+                <option value="omit">omit - 不發送Cookie</option>
             </select>
 
-            <label>重定向处理 (redirect)</label>
+            <label>重定向處理 (redirect)</label>
             <select id="settingRedirect">
-                <option value="follow">follow - 自动跟随跳转</option>
-                <option value="error">error - 跳转时报错</option>
-                <option value="manual">manual - 手动处理跳转</option>
+                <option value="follow">follow - 自動跟隨跳轉</option>
+                <option value="error">error - 跳轉時報錯</option>
+                <option value="manual">manual - 手動處理跳轉</option>
             </select>
 
             <label>Referrer 策略 (referrerPolicy)</label>
             <select id="settingReferrerPolicy">
-                <option value="no-referrer-when-downgrade">no-referrer-when-downgrade - 默认规则</option>
-                <option value="no-referrer">no-referrer - 不发送Referrer</option>
-                <option value="origin">origin - 只发送域名</option>
-                <option value="origin-when-cross-origin">origin-when-cross-origin - 跨域时只发送域名</option>
-                <option value="same-origin">same-origin - 仅同源发送</option>
-                <option value="strict-origin">strict-origin - 安全降级时不发送</option>
-                <option value="strict-origin-when-cross-origin">strict-origin-when-cross-origin - 安全跨域规则</option>
-                <option value="unsafe-url">unsafe-url - 总是发送完整URL</option>
+                <option value="no-referrer-when-downgrade">no-referrer-when-downgrade - 默認規則</option>
+                <option value="no-referrer">no-referrer - 不發送Referrer</option>
+                <option value="origin">origin - 只發送域名</option>
+                <option value="origin-when-cross-origin">origin-when-cross-origin - 跨域時只發送域名</option>
+                <option value="same-origin">same-origin - 僅同源發送</option>
+                <option value="strict-origin">strict-origin - 安全降級時不發送</option>
+                <option value="strict-origin-when-cross-origin">strict-origin-when-cross-origin - 安全跨域規則</option>
+                <option value="unsafe-url">unsafe-url - 總是發送完整URL</option>
             </select>
 
             <label>Referrer</label>
             <select id="settingReferrer">
-                <option value="about:client">about:client - 默认行为</option>
-                <option value="">空 - 不发送referrer</option>
-                <option value="custom">自定义</option>
+                <option value="about:client">about:client - 默認行為</option>
+                <option value="">空 - 不發送referrer</option>
+                <option value="custom">自定義</option>
             </select>
-            <input type="text" id="settingReferrerCustom" placeholder="自定义referrer URL" class="setting-input-integrity">
+            <input type="text" id="settingReferrerCustom" placeholder="自定義referrer URL" class="setting-input-integrity">
 
-            <label>完整性校验 (integrity)</label>
-            <input type="text" id="settingIntegrity" placeholder="输入哈希值" class="setting-input">
+            <label>完整性校驗 (integrity)</label>
+            <input type="text" id="settingIntegrity" placeholder="輸入哈希值" class="setting-input">
 
-            <label>保持连接 (keepalive)</label>
+            <label>保持連接 (keepalive)</label>
             <select id="settingKeepalive">
-                <option value="false">false - 默认</option>
-                <option value="true">true - 保持连接</option>
+                <option value="false">false - 默認</option>
+                <option value="true">true - 保持連接</option>
             </select>
         </div>
         <div class="dialog-buttons">
@@ -1349,14 +1349,14 @@
 
     <script>
         /**
-         * 全局变量：是否使用代理模式
+         * 全局變量：是否使用代理模式
          * @type {boolean}
          */
         let useProxy = false;
 
         /**
-         * 初始化代理模式状态
-         * 页面加载时请求 /api/mode 接口获取当前运行模式
+         * 初始化代理模式狀態
+         * 頁面加載時請求 /api/mode 接口獲取當前運行模式
          * @returns {Promise<void>}
          */
         async function initUseProxy() {
@@ -1378,8 +1378,8 @@
         }
 
         /**
-         * 切换请求标签页
-         * @param {string} tabName - 标签页名称，可选值：'headers' 或 'body'
+         * 切換請求標簽頁
+         * @param {string} tabName - 標簽頁名稱，可選值：'headers' 或 'body'
          */
         function switchTab(tabName) {
             document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
@@ -1393,34 +1393,34 @@
         }
 
         /**
-         * 添加请求头行
-         * 在请求头列表中添加一个新的请求头输入行
+         * 添加請求頭行
+         * 在請求頭列表中添加一個新的請求頭輸入行
          */
         function addHeader() {
             const headerRow = document.createElement('div');
             headerRow.className = 'header-row';
             headerRow.innerHTML = `
                 <input type="checkbox" checked>
-                <input type="text" placeholder="Header名称"/>
+                <input type="text" placeholder="Header名稱"/>
                 <input type="text" placeholder="Header值"/>
-                <input type="text" placeholder="备注" class="header-remark input-remark"/>
-                <button class="remove-btn" onclick="removeHeader(this)">删除</button>
+                <input type="text" placeholder="備注" class="header-remark input-remark"/>
+                <button class="remove-btn" onclick="removeHeader(this)">刪除</button>
             `;
             document.getElementById('headersList').appendChild(headerRow);
         }
 
         /**
-         * 删除请求头行
-         * @param {HTMLElement} button - 删除按钮元素
+         * 刪除請求頭行
+         * @param {HTMLElement} button - 刪除按鈕元素
          */
         function removeHeader(button) {
             button.parentElement.remove();
         }
 
         /**
-         * 更新请求体类型
-         * 根据选择的请求体类型显示对应的容器，隐藏其他容器
-         * @param {string} type - 请求体类型，可选值：'none', 'json', 'text', 'binary', 'form', 'formdata', 'websocket'
+         * 更新請求體類型
+         * 根據選擇的請求體類型顯示對應的容器，隱藏其他容器
+         * @param {string} type - 請求體類型，可選值：'none', 'json', 'text', 'binary', 'form', 'formdata', 'websocket'
          */
         function updateBodyType(type) {
             const jsonBodyContainer = document.getElementById('jsonBodyContainer');
@@ -1431,7 +1431,7 @@
             const wsControls = document.getElementById('wsControls');
             const wsBodyContainer = document.getElementById('wsBodyContainer');
 
-            // 隐藏所有容器
+            // 隱藏所有容器
             jsonBodyContainer.style.display = 'none';
             textBodyContainer.style.display = 'none';
             binaryBodyContainer.style.display = 'none';
@@ -1443,21 +1443,21 @@
             switch (type) {
                 case 'json':
                     jsonBodyContainer.style.display = 'block';
-                    // 如果没有行，添加一个默认行
+                    // 如果沒有行，添加一個默認行
                     if (document.getElementById('jsonBodyRows').children.length === 0) {
                         addJsonBodyRow();
                     }
                     break;
                 case 'text':
                     textBodyContainer.style.display = 'block';
-                    // 如果没有行，添加一个默认行
+                    // 如果沒有行，添加一個默認行
                     if (document.getElementById('textBodyRows').children.length === 0) {
                         addTextBodyRow();
                     }
                     break;
                 case 'binary':
                     binaryBodyContainer.style.display = 'block';
-                    // 如果没有行，添加一个默认行
+                    // 如果沒有行，添加一個默認行
                     if (document.getElementById('binaryBodyRows').children.length === 0) {
                         addBinaryBodyRow();
                     }
@@ -1476,15 +1476,15 @@
                     break;
                 case 'none':
                 default:
-                    // 无请求体，所有容器都隐藏
+                    // 無請求體，所有容器都隱藏
                     break;
             }
         }
 
         /**
-         * 处理FormData文件输入变化
-         * 为FormData文件输入框提供文件预览功能
-         * @param {Event} e - 文件输入变化事件
+         * 處理FormData文件輸入變化
+         * 為FormData文件輸入框提供文件預覽功能
+         * @param {Event} e - 文件輸入變化事件
          */
         function handleFormDataFileChange(e) {
             const filePreview = e.target.nextElementSibling;
@@ -1501,9 +1501,9 @@
         }
 
         /**
-         * 处理Binary请求体文件输入变化
-         * 为Binary请求体文件输入框提供文件预览功能
-         * @param {Event} e - 文件输入变化事件
+         * 處理Binary請求體文件輸入變化
+         * 為Binary請求體文件輸入框提供文件預覽功能
+         * @param {Event} e - 文件輸入變化事件
          */
         function handleBinaryFileChange(e) {
             const file = e.target.files[0];
@@ -1521,9 +1521,9 @@
         }
 
         /**
-         * 创建JSON请求体行
-         * 创建一个包含radio选择、textarea输入、备注和删除按钮的JSON请求体行
-         * @returns {HTMLElement} 创建的JSON请求体行元素
+         * 創建JSON請求體行
+         * 創建一個包含radio選擇、textarea輸入、備注和刪除按鈕的JSON請求體行
+         * @returns {HTMLElement} 創建的JSON請求體行元素
          */
         function createJsonBodyRow() {
             const row = document.createElement('div');
@@ -1533,16 +1533,16 @@
                 <div class="body-content">
                     <textarea placeholder="{}" class="textarea-body"></textarea>
                 </div>
-                <textarea placeholder="备注" class="body-remark"></textarea>
-                <button class="remove-btn" onclick="removeBodyRow(this, 'json')">删除</button>
+                <textarea placeholder="備注" class="body-remark"></textarea>
+                <button class="remove-btn" onclick="removeBodyRow(this, 'json')">刪除</button>
             `;
             return row;
         }
 
         /**
-         * 创建Text请求体行
-         * 创建一个包含radio选择、textarea输入、备注和删除按钮的Text请求体行
-         * @returns {HTMLElement} 创建的Text请求体行元素
+         * 創建Text請求體行
+         * 創建一個包含radio選擇、textarea輸入、備注和刪除按鈕的Text請求體行
+         * @returns {HTMLElement} 創建的Text請求體行元素
          */
         function createTextBodyRow() {
             const row = document.createElement('div');
@@ -1552,16 +1552,16 @@
                 <div class="body-content">
                     <textarea placeholder="text" class="textarea-body"></textarea>
                 </div>
-                <textarea placeholder="备注" class="body-remark"></textarea>
-                <button class="remove-btn" onclick="removeBodyRow(this, 'text')">删除</button>
+                <textarea placeholder="備注" class="body-remark"></textarea>
+                <button class="remove-btn" onclick="removeBodyRow(this, 'text')">刪除</button>
             `;
             return row;
         }
 
         /**
-         * 创建Binary请求体行
-         * 创建一个包含radio选择、文件输入、备注和删除按钮的Binary请求体行
-         * @returns {HTMLElement} 创建的Binary请求体行元素
+         * 創建Binary請求體行
+         * 創建一個包含radio選擇、文件輸入、備注和刪除按鈕的Binary請求體行
+         * @returns {HTMLElement} 創建的Binary請求體行元素
          */
         function createBinaryBodyRow() {
             const row = document.createElement('div');
@@ -1572,60 +1572,60 @@
                     <input type="file" class="file-input-binary" onchange="handleBinaryFileChange(event)">
                     <div class="file-preview"></div>
                 </div>
-                <input type="text" placeholder="备注" class="body-remark">
-                <button class="remove-btn" onclick="removeBodyRow(this, 'binary')">删除</button>
+                <input type="text" placeholder="備注" class="body-remark">
+                <button class="remove-btn" onclick="removeBodyRow(this, 'binary')">刪除</button>
             `;
             return row;
         }
 
         /**
-         * 添加JSON请求体行
-         * 在JSON请求体容器中添加一个新的JSON请求体行，如果是第一行则自动选中
+         * 添加JSON請求體行
+         * 在JSON請求體容器中添加一個新的JSON請求體行，如果是第一行則自動選中
          */
         function addJsonBodyRow() {
             const container = document.getElementById('jsonBodyRows');
             const row = createJsonBodyRow();
             container.appendChild(row);
-            // 如果是第一行，自动选中
+            // 如果是第一行，自動選中
             if (container.children.length === 1) {
                 row.querySelector('input[type="radio"]').checked = true;
             }
         }
 
         /**
-         * 添加Text请求体行
-         * 在Text请求体容器中添加一个新的Text请求体行，如果是第一行则自动选中
+         * 添加Text請求體行
+         * 在Text請求體容器中添加一個新的Text請求體行，如果是第一行則自動選中
          */
         function addTextBodyRow() {
             const container = document.getElementById('textBodyRows');
             const row = createTextBodyRow();
             container.appendChild(row);
-            // 如果是第一行，自动选中
+            // 如果是第一行，自動選中
             if (container.children.length === 1) {
                 row.querySelector('input[type="radio"]').checked = true;
             }
         }
 
         /**
-         * 添加Binary请求体行
-         * 在Binary请求体容器中添加一个新的Binary请求体行，如果是第一行则自动选中
+         * 添加Binary請求體行
+         * 在Binary請求體容器中添加一個新的Binary請求體行，如果是第一行則自動選中
          */
         function addBinaryBodyRow() {
             const container = document.getElementById('binaryBodyRows');
             const row = createBinaryBodyRow();
             container.appendChild(row);
-            // 如果是第一行，自动选中
+            // 如果是第一行，自動選中
             if (container.children.length === 1) {
                 row.querySelector('input[type="radio"]').checked = true;
             }
         }
 
         /**
-         * 删除请求体行
-         * 删除指定的请求体行，如果删除的是选中的行且还有其他行，则选中第一行
-         * 如果没有行了，则添加一个默认行
-         * @param {HTMLElement} button - 删除按钮元素
-         * @param {string} type - 请求体类型，用于确定添加哪种类型的默认行
+         * 刪除請求體行
+         * 刪除指定的請求體行，如果刪除的是選中的行且還有其他行，則選中第一行
+         * 如果沒有行了，則添加一個默認行
+         * @param {HTMLElement} button - 刪除按鈕元素
+         * @param {string} type - 請求體類型，用於確定添加哪種類型的默認行
          */
         function removeBodyRow(button, type) {
             const row = button.closest('.body-row');
@@ -1634,12 +1634,12 @@
 
             row.remove();
 
-            // 如果删除的是选中的行，且还有其他行，则选中第一行
+            // 如果刪除的是選中的行，且還有其他行，則選中第一行
             if (wasSelected && container.children.length > 0) {
                 container.children[0].querySelector('input[type="radio"]').checked = true;
             }
 
-            // 如果没有行了，添加一个默认行
+            // 如果沒有行了，添加一個默認行
             if (container.children.length === 0) {
                 switch (type) {
                     case 'json':
@@ -1656,16 +1656,16 @@
         }
 
         /**
-         * 创建FormData行
-         * 创建一个包含复选框、参数名、类型选择、值输入、备注和删除按钮的FormData行
-         * @returns {HTMLElement} 创建的FormData行元素
+         * 創建FormData行
+         * 創建一個包含覆選框、參數名、類型選擇、值輸入、備注和刪除按鈕的FormData行
+         * @returns {HTMLElement} 創建的FormData行元素
          */
         function createFormDataRow() {
             const row = document.createElement('div');
             row.className = 'formdata-row';
             row.innerHTML = `
                 <input type="checkbox" checked>
-                <input type="text" class="formdata-key" placeholder="参数名称">
+                <input type="text" class="formdata-key" placeholder="參數名稱">
                 <select class="formdata-type select-formdata-type" onchange="handleTypeChange(this)">
                     <option value="text">文本</option>
                     <option value="file">文件</option>
@@ -1675,15 +1675,15 @@
                     <input type="file" class="file-input" multiple onchange="handleFormDataFileChange(event)">
                     <div class="file-preview"></div>
                 </div>
-                <input type="text" placeholder="备注" class="formdata-remark"/>
-                <button class="remove-btn" onclick="removeFormDataRow(this)">删除</button>
+                <input type="text" placeholder="備注" class="formdata-remark"/>
+                <button class="remove-btn" onclick="removeFormDataRow(this)">刪除</button>
             `;
             return row;
         }
 
         /**
          * 添加FormData行
-         * 在FormData容器中添加一个新的FormData行
+         * 在FormData容器中添加一個新的FormData行
          */
         function addFormDataRow() {
             const container = document.getElementById('formDataRows');
@@ -1692,17 +1692,17 @@
         }
 
         /**
-         * 删除FormData行
-         * @param {HTMLElement} button - 删除按钮元素
+         * 刪除FormData行
+         * @param {HTMLElement} button - 刪除按鈕元素
          */
         function removeFormDataRow(button) {
             button.closest('.formdata-row').remove();
         }
 
         /**
-         * 处理FormData类型变化
-         * 根据选择的类型（文本/文件）显示对应的输入控件
-         * @param {HTMLSelectElement} select - 类型选择下拉框元素
+         * 處理FormData類型變化
+         * 根據選擇的類型（文本/文件）顯示對應的輸入控件
+         * @param {HTMLSelectElement} select - 類型選擇下拉框元素
          */
         function handleTypeChange(select) {
             const row = select.closest('.formdata-row');
@@ -1714,7 +1714,7 @@
                 textInput.style.display = 'block';
                 fileInput.style.display = 'none';
                 filePreview.style.display = 'none';
-                fileInput.value = ''; // 清除已选文件
+                fileInput.value = ''; // 清除已選文件
             } else {
                 textInput.style.display = 'none';
                 fileInput.style.display = 'block';
@@ -1723,33 +1723,33 @@
         }
 
         /**
-         * 添加表单行
-         * 在表单容器中添加一个新的表单参数行
+         * 添加表單行
+         * 在表單容器中添加一個新的表單參數行
          */
         function addFormRow() {
             const formRow = document.createElement('div');
             formRow.className = 'header-row';
             formRow.innerHTML = `
                 <input type="checkbox" checked>
-                <input type="text" placeholder="参数名称"/>
-                <input type="text" placeholder="参数值"/>
-                <input type="text" placeholder="备注" class="form-remark input-remark"/>
-                <button class="remove-btn" onclick="removeFormRow(this)">删除</button>
+                <input type="text" placeholder="參數名稱"/>
+                <input type="text" placeholder="參數值"/>
+                <input type="text" placeholder="備注" class="form-remark input-remark"/>
+                <button class="remove-btn" onclick="removeFormRow(this)">刪除</button>
             `;
             document.getElementById('formRows').appendChild(formRow);
         }
 
         /**
-         * 删除表单行
-         * @param {HTMLElement} button - 删除按钮元素
+         * 刪除表單行
+         * @param {HTMLElement} button - 刪除按鈕元素
          */
         function removeFormRow(button) {
             button.closest('.header-row').remove();
         }
 
         /**
-         * 获取当前选择的请求体类型
-         * @returns {string} 请求体类型，如果没有选择则返回 'none'
+         * 獲取當前選擇的請求體類型
+         * @returns {string} 請求體類型，如果沒有選擇則返回 'none'
          */
         function getBodyType() {
             const checkedRadio = document.querySelector('input[name="bodyType"]:checked');
@@ -1757,12 +1757,12 @@
         }
 
         /**
-         * 构建请求头
-         * 获取并处理用户自定义请求头和全局请求头
-         * @returns {Promise<Object>} 处理后的请求头对象
+         * 構建請求頭
+         * 獲取並處理用戶自定義請求頭和全局請求頭
+         * @returns {Promise<Object>} 處理後的請求頭對象
          */
         async function buildRequestHeaders() {
-            // 获取用户自定义请求头
+            // 獲取用戶自定義請求頭
             const customHeaders = {};
             document.querySelectorAll('#headersList .header-row').forEach(row => {
                 const inputs = row.getElementsByTagName('input');
@@ -1771,17 +1771,17 @@
                 const value = inputs[2]?.value;
 
                 if (isEnabled && key) {
-                    // 替换header的key和value中的变量
+                    // 替換header的key和value中的變量
                     const normalizedKey = replaceVariables(key)?.trim();
                     const normalizedValue = replaceVariables(value || '')?.trim();
 
-                    // 验证header名称
+                    // 驗證header名稱
                     if (normalizedKey) {
                         if (!/^[a-zA-Z0-9\-]+$/.test(normalizedKey)) {
-                            throw new Error(`无效的请求头名称: ${normalizedKey}`);
+                            throw new Error(`無效的請求頭名稱: ${normalizedKey}`);
                         }
 
-                        // 规范化header名称（首字母大写，其余小写）
+                        // 規範化header名稱（首字母大寫，其余小寫）
                         const finalKey = normalizedKey.split('-').map(part =>
                             part.charAt(0).toUpperCase() + part.slice(1).toLowerCase()
                         ).join('-');
@@ -1790,7 +1790,7 @@
                 }
             });
 
-            // 获取全局请求头并规范化
+            // 獲取全局請求頭並規範化
             const globalHeaders = {};
             const rawGlobalHeaders = getGlobalHeaders();
             for (const [key, value] of Object.entries(rawGlobalHeaders)) {
@@ -1802,13 +1802,13 @@
                 }
             }
 
-            // 合并请求头，用户自定义的优先级更高
+            // 合並請求頭，用戶自定義的優先級更高
             const headers = { ...globalHeaders, ...customHeaders };
 
-            // 验证所有请求头名称
+            // 驗證所有請求頭名稱
             for (const key of Object.keys(headers)) {
                 if (key && !/^[a-zA-Z0-9\-]+$/.test(key)) {
-                    throw new Error(`无效的请求头名称: ${key}`);
+                    throw new Error(`無效的請求頭名稱: ${key}`);
                 }
             }
 
@@ -1817,21 +1817,21 @@
 
         function normalizeUrlWithProtocol(url, protocol) {
             if (!url) return url;
-            // 只判断常用的四种协议
+            // 只判斷常用的四種協議
             if (/^(https?|wss?):\/\//i.test(url)) return url;
             if (url.startsWith('//')) return protocol + ':' + url;
             return protocol + '://' + url;
         }
 
         /**
-         * 处理代理请求
-         * 构建FormData并发送到代理服务器
-         * @param {string} url - 目标URL
-         * @param {string} method - 请求方法
-         * @param {string} bodyType - 请求体类型
-         * @param {Object} headers - 请求头
-         * @param {Object} settings - 请求设置
-         * @param {boolean} download - 是否为下载请求
+         * 處理代理請求
+         * 構建FormData並發送到代理服務器
+         * @param {string} url - 目標URL
+         * @param {string} method - 請求方法
+         * @param {string} bodyType - 請求體類型
+         * @param {Object} headers - 請求頭
+         * @param {Object} settings - 請求設置
+         * @param {boolean} download - 是否為下載請求
          * @returns {Promise<void>}
          */
         async function handleProxyRequest(url, method, bodyType, headers, settings, download) {
@@ -1848,7 +1848,7 @@
             formData.append('retry_count', settings.retry_count || '0');
             formData.append('retry_delay', settings.retry_delay || '0');
 
-            // 处理body和文件
+            // 處理body和文件
             const filesInfo = [];
             await processRequestBody(formData, bodyType, filesInfo);
 
@@ -1865,7 +1865,7 @@
                 const duration = Date.now() - startTime;
                 const contentType = response.headers.get('content-type');
 
-                // SSE流式处理
+                // SSE流式處理
                 if (contentType?.includes('text/event-stream')) {
                     await handleSSEFetchResponse(response);
                     saveRequestToHistory();
@@ -1886,11 +1886,11 @@
         }
 
         /**
-         * 处理请求体
-         * 根据请求体类型处理不同的数据
-         * @param {FormData} formData - FormData对象
-         * @param {string} bodyType - 请求体类型
-         * @param {Array} filesInfo - 文件信息数组
+         * 處理請求體
+         * 根據請求體類型處理不同的數據
+         * @param {FormData} formData - FormData對象
+         * @param {string} bodyType - 請求體類型
+         * @param {Array} filesInfo - 文件信息數組
          * @returns {Promise<void>}
          */
         async function processRequestBody(formData, bodyType, filesInfo) {
@@ -1959,8 +1959,8 @@
         }
 
         /**
-         * 更新响应头显示
-         * @param {Response} response - fetch响应对象
+         * 更新響應頭顯示
+         * @param {Response} response - fetch響應對象
          * @returns {Promise<void>}
          */
         async function updateResponseHeaders(response) {
@@ -1979,7 +1979,7 @@
                         row.insertCell(1).textContent = Array.isArray(values) ? values.join(', ') : values;
                     }
                 } catch (e) {
-                    console.error('解析响应头失败:', e);
+                    console.error('解析響應頭失敗:', e);
                 }
             } else {
                 // 回退到原始方式
@@ -1992,8 +1992,8 @@
         }
 
         /**
-         * 处理请求错误
-         * @param {Error} error - 错误对象
+         * 處理請求錯誤
+         * @param {Error} error - 錯誤對象
          * @returns {Promise<void>}
          */
         async function handleRequestError(error) {
@@ -2002,7 +2002,7 @@
             const responseHeaders = document.getElementById('responseHeaders');
 
             if (responseInfo) {
-                responseInfo.innerHTML = `请求错误: ${error.message}`;
+                responseInfo.innerHTML = `請求錯誤: ${error.message}`;
             }
             if (responseBody) {
                 responseBody.value = '';
@@ -2016,15 +2016,15 @@
         }
 
         /**
-         * 处理WebSocket/SSE请求
-         * @param {string} url - 目标URL
-         * @param {string} method - 请求方法 (WS/SSE)
-         * @param {Object} headers - 请求头
-         * @param {Object} settings - 请求设置
+         * 處理WebSocket/SSE請求
+         * @param {string} url - 目標URL
+         * @param {string} method - 請求方法 (WS/SSE)
+         * @param {Object} headers - 請求頭
+         * @param {Object} settings - 請求設置
          * @returns {Promise<void>}
          */
         async function handleWSRequest(url, method, headers, settings) {
-            // 断开已有连接
+            // 斷開已有連接
             if (currentWS) {
                 try { currentWS.close(); } catch (e) { }
                 currentWS = null;
@@ -2034,7 +2034,7 @@
                 currentSSE = null;
             }
 
-            // 清空响应区域
+            // 清空響應區域
             const responseInfo = document.getElementById('responseInfo');
             const responseBody = document.getElementById('responseBody');
             const responseHeaders = document.getElementById('responseHeaders');
@@ -2046,7 +2046,7 @@
                 if (tbody) tbody.innerHTML = '';
             }
 
-            // 构造 formData
+            // 構造 formData
             const formData = new FormData();
             formData.append('url', url);
             formData.append('method', method);
@@ -2064,7 +2064,7 @@
                 const data = await resp.json();
                 if (data.code !== 0) {
                     if (responseInfo) {
-                        responseInfo.innerHTML = '连接失败: ' + (data.msg || '未知错误');
+                        responseInfo.innerHTML = '連接失敗: ' + (data.msg || '未知錯誤');
                     }
                     return;
                 }
@@ -2077,15 +2077,15 @@
                 }
             } catch (err) {
                 if (responseInfo) {
-                    responseInfo.innerHTML = '请求错误: ' + (err.message || err);
+                    responseInfo.innerHTML = '請求錯誤: ' + (err.message || err);
                 }
-                console.error('WS/SSE请求错误:', err);
+                console.error('WS/SSE請求錯誤:', err);
             }
         }
 
         /**
-         * 建立WebSocket连接
-         * @param {string} connect_id - 连接ID
+         * 建立WebSocket連接
+         * @param {string} connect_id - 連接ID
          * @returns {Promise<void>}
          */
         async function establishWSConnection(connect_id) {
@@ -2100,13 +2100,13 @@
             ws.onopen = function () {
                 const responseInfo = document.getElementById('responseInfo');
                 if (responseInfo) {
-                    responseInfo.innerHTML = 'WebSocket 连接已建立';
+                    responseInfo.innerHTML = 'WebSocket 連接已建立';
                 }
                 saveRequestToHistory();
             };
 
             ws.onmessage = function (e) {
-                // 处理WS响应头
+                // 處理WS響應頭
                 try {
                     if (typeof e.data === 'string') {
                         const obj = JSON.parse(e.data);
@@ -2117,10 +2117,10 @@
                     }
 
                 } catch (err) {
-                    console.warn('解析WS响应头失败:', err);
+                    console.warn('解析WS響應頭失敗:', err);
                 }
 
-                // 处理普通消息
+                // 處理普通消息
                 const responseBody = document.getElementById('responseBody');
                 if (!responseBody) return;
 
@@ -2128,11 +2128,11 @@
                     // 文本消息
                     responseBody.value += e.data + '\n';
                 } else if (e.data instanceof Blob) {
-                    // Blob 类型，转为 base64 或 hex 或 utf-8 字符串
+                    // Blob 類型，轉為 base64 或 hex 或 utf-8 字符串
                     const reader = new FileReader();
                     reader.onload = function () {
-                        // 你可以选择显示为 base64、hex 或 utf-8
-                        // 这里是 base64
+                        // 你可以選擇顯示為 base64、hex 或 utf-8
+                        // 這里是 base64
                         /*
                         const base64 = btoa(
                             new Uint8Array(reader.result)
@@ -2145,7 +2145,7 @@
                     };
                     reader.readAsArrayBuffer(e.data);
                 } else if (e.data instanceof ArrayBuffer) {
-                    // ArrayBuffer 类型，转为 hex 或 base64
+                    // ArrayBuffer 類型，轉為 hex 或 base64
                     /*
                     const arr = new Uint8Array(e.data);
                     const hex = Array.from(arr).map(b => b.toString(16).padStart(2, '0')).join(' ');
@@ -2160,25 +2160,25 @@
             ws.onerror = function (e) {
                 const responseInfo = document.getElementById('responseInfo');
                 if (responseInfo) {
-                    responseInfo.innerHTML = 'WebSocket 错误';
+                    responseInfo.innerHTML = 'WebSocket 錯誤';
                 }
             };
 
             ws.onclose = function () {
                 const responseInfo = document.getElementById('responseInfo');
                 if (responseInfo) {
-                    responseInfo.innerHTML = 'WebSocket 连接已关闭';
+                    responseInfo.innerHTML = 'WebSocket 連接已關閉';
                 }
                 currentWS = null;
             };
 
-            // 绑定发送/关闭按钮
+            // 綁定發送/關閉按鈕
             bindWSButtons(ws);
         }
 
         /**
-         * 建立SSE连接
-         * @param {string} connect_id - 连接ID
+         * 建立SSE連接
+         * @param {string} connect_id - 連接ID
          * @returns {Promise<void>}
          */
         async function establishSSEConnection(connect_id) {
@@ -2191,17 +2191,17 @@
 
             const responseInfo = document.getElementById('responseInfo');
             if (responseInfo) {
-                responseInfo.innerHTML = 'SSE 连接已建立';
+                responseInfo.innerHTML = 'SSE 連接已建立';
             }
             saveRequestToHistory();
 
-            // 监听x-web-curl-headers事件，专门处理响应头
+            // 監聽x-web-curl-headers事件，專門處理響應頭
             es.addEventListener('x-web-curl-headers', function (e) {
                 try {
                     const obj = JSON.parse(e.data);
                     updateWSResponseHeaders(obj);
                 } catch (err) {
-                    console.warn('解析SSE响应头失败:', err);
+                    console.warn('解析SSE響應頭失敗:', err);
                 }
             });
 
@@ -2212,7 +2212,7 @@
                 }
             };
 
-            // 注册用户配置的SSE事件类型监听器
+            // 注冊用戶配置的SSE事件類型監聽器
             const settings = getRequestSettings();
             if (settings.sse_event_types) {
                 const sseEventTypeList = settings.sse_event_types.split(',').map(type => type.trim()).filter(type => type);
@@ -2231,7 +2231,7 @@
             es.onerror = function (e) {
                 const responseInfo = document.getElementById('responseInfo');
                 if (responseInfo) {
-                    responseInfo.innerHTML = 'SSE 连接已关闭';
+                    responseInfo.innerHTML = 'SSE 連接已關閉';
                 }
                 es.close();
                 currentSSE = null;
@@ -2239,8 +2239,8 @@
         }
 
         /**
-         * 更新WebSocket/SSE响应头
-         * @param {Object} headers - 响应头对象
+         * 更新WebSocket/SSE響應頭
+         * @param {Object} headers - 響應頭對象
          */
         function updateWSResponseHeaders(headers) {
             const responseHeadersTable = document.getElementById('responseHeaders')?.getElementsByTagName('tbody')[0];
@@ -2255,10 +2255,10 @@
         }
 
         /**
-         * 设置Content-Type并获取请求体
-         * @param {Object} headers - 请求头对象
-         * @param {string} bodyType - 请求体类型
-         * @param {Object} requestOptions - 请求选项
+         * 設置Content-Type並獲取請求體
+         * @param {Object} headers - 請求頭對象
+         * @param {string} bodyType - 請求體類型
+         * @param {Object} requestOptions - 請求選項
          * @returns {Promise<void>}
          */
         async function setContentTypeAndBody(headers, bodyType, requestOptions) {
@@ -2270,10 +2270,10 @@
                     headers['Content-Type'] = 'application/json';
                     break;
                 case 'text':
-                    // 检查用户是否已经设置了文本类型的 Content-Type
+                    // 檢查用戶是否已經設置了文本類型的 Content-Type
                     const customContentType = headers['Content-Type'];
                     if (customContentType && customContentType.startsWith('text/')) {
-                        // 使用用户自定义的 Content-Type
+                        // 使用用戶自定義的 Content-Type
                         headers['Content-Type'] = customContentType;
                     } else {
                         headers['Content-Type'] = 'text/plain';
@@ -2288,8 +2288,8 @@
         }
 
         /**
-         * 绑定WebSocket按钮事件
-         * @param {WebSocket} ws - WebSocket实例
+         * 綁定WebSocket按鈕事件
+         * @param {WebSocket} ws - WebSocket實例
          */
         function bindWSButtons(ws) {
             const wsSendBtn = document.getElementById('wsSendBtn');
@@ -2303,7 +2303,7 @@
                         try {
                             ws.send(msg);
                         } catch (err) {
-                            console.error('发送WS消息失败:', err);
+                            console.error('發送WS消息失敗:', err);
                         }
                     }
                 };
@@ -2315,7 +2315,7 @@
                         try {
                             ws.close();
                         } catch (err) {
-                            console.error('关闭WS连接失败:', err);
+                            console.error('關閉WS連接失敗:', err);
                         }
                     }
                 };
@@ -2323,17 +2323,17 @@
         }
 
         /**
-         * 获取请求体内容
-         * 根据请求体类型获取对应的请求体数据
-         * @param {string} bodyType - 请求体类型
-         * @returns {Promise<string|FormData|ArrayBuffer|null>} 请求体数据，根据类型返回不同格式
-         * @throws {Error} 当JSON格式不正确或未选择文件时抛出错误
+         * 獲取請求體內容
+         * 根據請求體類型獲取對應的請求體數據
+         * @param {string} bodyType - 請求體類型
+         * @returns {Promise<string|FormData|ArrayBuffer|null>} 請求體數據，根據類型返回不同格式
+         * @throws {Error} 當JSON格式不正確或未選擇文件時拋出錯誤
          */
         async function getRequestBody(bodyType) {
             const getSelectedRow = (selector) => {
                 const row = document.querySelector(selector);
                 if (!row) {
-                    throw new Error(`请选择一个${bodyType}请求体`);
+                    throw new Error(`請選擇一個${bodyType}請求體`);
                 }
                 return row;
             };
@@ -2343,11 +2343,11 @@
                     try {
                         const selectedRow = getSelectedRow('#jsonBodyRows input[type="radio"]:checked');
                         const jsonText = selectedRow.closest('.body-row').querySelector('textarea')?.value || '';
-                        // 验证JSON格式的合法性
+                        // 驗證JSON格式的合法性
                         JSON.parse(jsonText);
                         return jsonText;
                     } catch (e) {
-                        throw new Error(`JSON格式不正确: ${e.message}`);
+                        throw new Error(`JSON格式不正確: ${e.message}`);
                     }
                 }
                 case 'text': {
@@ -2358,7 +2358,7 @@
                     const selectedBinaryRow = getSelectedRow('#binaryBodyRows input[type="radio"]:checked');
                     const fileInput = selectedBinaryRow.closest('.body-row').querySelector('input[type="file"]');
                     if (!fileInput?.files.length) {
-                        throw new Error('请选择要上传的文件');
+                        throw new Error('請選擇要上傳的文件');
                     }
                     return await fileInput.files[0].arrayBuffer();
                 }
@@ -2407,12 +2407,12 @@
         }
 
         /**
-         * 处理下载类型的HTTP响应
-         * 将响应内容保存为文件并在页面上显示相关信息
-         * @param {Response} response - fetch API 的响应对象
-         * @param {string} contentType - 响应内容类型
+         * 處理下載類型的HTTP響應
+         * 將響應內容保存為文件並在頁面上顯示相關信息
+         * @param {Response} response - fetch API 的響應對象
+         * @param {string} contentType - 響應內容類型
          * @returns {Promise<void>}
-         * @throws {Error} 当HTTP响应状态不是ok时抛出
+         * @throws {Error} 當HTTP響應狀態不是ok時拋出
          */
         async function handleDownloadResponse(response, contentType) {
             if (!response.ok) {
@@ -2429,7 +2429,7 @@
                     try {
                         filename = decodeURIComponent(filename);
                     } catch (e) {
-                        console.warn('文件名解码失败:', e);
+                        console.warn('文件名解碼失敗:', e);
                     }
                 }
             }
@@ -2442,7 +2442,7 @@
             const blob = await response.blob();
             const downloadUrl = URL.createObjectURL(blob);
 
-            // 使用现代下载方式
+            // 使用現代下載方式
             const a = document.createElement('a');
             a.href = downloadUrl;
             a.download = filename;
@@ -2457,24 +2457,24 @@
 
             if (responseInfo) {
                 responseInfo.innerHTML = `
-                    状态码: ${response.status} ${response.statusText}<br>
+                    狀態碼: ${response.status} ${response.statusText}<br>
                     文件名: ${filename}<br>
                     文件大小: ${(blob.size / 1024).toFixed(2)} KB<br>
-                    内容类型: ${contentType || '未指定'}<br>
+                    內容類型: ${contentType || '未指定'}<br>
                 `;
             }
 
             if (responseBody) {
-                responseBody.value = '[二进制文件内容已下载]';
+                responseBody.value = '[二進制文件內容已下載]';
             }
         }
 
         /**
-         * 处理普通HTTP响应（非下载）
-         * 在页面上显示响应信息、响应体和格式化按钮（如为JSON）
-         * @param {Response} response - fetch API 的响应对象
-         * @param {number} duration - 响应耗时，单位ms
-         * @param {string} contentType - 响应内容类型
+         * 處理普通HTTP響應（非下載）
+         * 在頁面上顯示響應信息、響應體和格式化按鈕（如為JSON）
+         * @param {Response} response - fetch API 的響應對象
+         * @param {number} duration - 響應耗時，單位ms
+         * @param {string} contentType - 響應內容類型
          * @returns {Promise<void>}
          */
         async function handleNormalResponse(response, duration, contentType) {
@@ -2483,16 +2483,16 @@
 
             if (responseInfo) {
                 responseInfo.innerHTML = `
-                    状态码: ${response.status} ${response.statusText}<br>
-                    响应时间: ${duration}ms<br>
-                    内容类型: ${contentType || '未指定'}<br>
+                    狀態碼: ${response.status} ${response.statusText}<br>
+                    響應時間: ${duration}ms<br>
+                    內容類型: ${contentType || '未指定'}<br>
                 `;
             }
 
-            // 重置JSON格式化状态
+            // 重置JSON格式化狀態
             resetJsonFormatState();
 
-            // 二进制内容类型检测
+            // 二進制內容類型檢測
             const binaryTypes = [
                 'application/octet-stream',
                 'application/pdf',
@@ -2507,7 +2507,7 @@
 
             if (isBinaryContent) {
                 if (responseBody) {
-                    responseBody.value = `[二进制内容] - ${contentType}\n建议使用"发送并下载"按钮下载此内容`;
+                    responseBody.value = `[二進制內容] - ${contentType}\n建議使用"發送並下載"按鈕下載此內容`;
                 }
             } else {
                 const responseText = await response.text();
@@ -2515,7 +2515,7 @@
                     responseBody.value = responseText;
                 }
 
-                // 检测是否为JSON响应
+                // 檢測是否為JSON響應
                 const isJsonContentType = contentType?.includes('application/json');
                 const isJsonFormat = responseText.trim() && (
                     responseText.trim().startsWith('{') ||
@@ -2536,8 +2536,8 @@
         }
 
         /**
-         * 重置JSON格式化状态
-         * 隐藏格式化容器和按钮，显示原始响应内容
+         * 重置JSON格式化狀態
+         * 隱藏格式化容器和按鈕，顯示原始響應內容
          */
         function resetJsonFormatState() {
             const elements = {
@@ -2556,8 +2556,8 @@
         }
 
         /**
-         * 显示JSON格式化按钮
-         * 当检测到响应为JSON格式时显示格式化按钮
+         * 顯示JSON格式化按鈕
+         * 當檢測到響應為JSON格式時顯示格式化按鈕
          */
         function showJsonFormatButton() {
             const formatJsonBtn = document.getElementById('formatJsonBtn');
@@ -2566,57 +2566,57 @@
             }
         }
 
-        // 全局变量，保存当前WS/SSE连接
+        // 全局變量，保存當前WS/SSE連接
         let currentWS = null;
         let currentSSE = null;
 
         // localStorage管理工具
         const StorageManager = {
             /**
-             * 安全地从localStorage获取数据
-             * @param {string} key - 存储键
-             * @param {any} defaultValue - 默认值
-             * @returns {any} 解析后的数据
+             * 安全地從localStorage獲取數據
+             * @param {string} key - 存儲鍵
+             * @param {any} defaultValue - 默認值
+             * @returns {any} 解析後的數據
              */
             get(key, defaultValue = null) {
                 try {
                     const item = localStorage.getItem(key);
                     return item ? JSON.parse(item) : defaultValue;
                 } catch (error) {
-                    console.error(`读取localStorage失败 [${key}]:`, error);
+                    console.error(`讀取localStorage失敗 [${key}]:`, error);
                     return defaultValue;
                 }
             },
 
             /**
-             * 安全地向localStorage存储数据
-             * @param {string} key - 存储键
-             * @param {any} value - 要存储的数据
+             * 安全地向localStorage存儲數據
+             * @param {string} key - 存儲鍵
+             * @param {any} value - 要存儲的數據
              */
             set(key, value) {
                 try {
                     localStorage.setItem(key, JSON.stringify(value));
                 } catch (error) {
-                    console.error(`写入localStorage失败 [${key}]:`, error);
+                    console.error(`寫入localStorage失敗 [${key}]:`, error);
                 }
             },
 
             /**
-             * 从localStorage删除数据
-             * @param {string} key - 存储键
+             * 從localStorage刪除數據
+             * @param {string} key - 存儲鍵
              */
             remove(key) {
                 try {
                     localStorage.removeItem(key);
                 } catch (error) {
-                    console.error(`删除localStorage失败 [${key}]:`, error);
+                    console.error(`刪除localStorage失敗 [${key}]:`, error);
                 }
             }
         };
 
         /**
-         * 设置请求按钮状态
-         * @param {boolean} loading - 是否处于加载状态
+         * 設置請求按鈕狀態
+         * @param {boolean} loading - 是否處於加載狀態
          */
         function setRequestButtonsState(loading) {
             const sendBtn = document.getElementById('sendBtn');
@@ -2626,10 +2626,10 @@
                 sendBtn.disabled = loading;
                 if (loading) {
                     sendBtn.classList.add('loading');
-                    sendBtn.textContent = '请求中...';
+                    sendBtn.textContent = '請求中...';
                 } else {
                     sendBtn.classList.remove('loading');
-                    sendBtn.textContent = '发送请求';
+                    sendBtn.textContent = '發送請求';
                 }
             }
 
@@ -2637,48 +2637,48 @@
                 downloadBtn.disabled = loading;
                 if (loading) {
                     downloadBtn.classList.add('loading');
-                    downloadBtn.textContent = '下载中...';
+                    downloadBtn.textContent = '下載中...';
                 } else {
                     downloadBtn.classList.remove('loading');
-                    downloadBtn.textContent = '下载';
+                    downloadBtn.textContent = '下載';
                 }
             }
         }
 
         /**
-         * 发送HTTP请求或建立WS/SSE连接
-         * 根据请求方法和代理模式选择不同的处理方式
-         * @param {boolean} download - 是否为下载请求
+         * 發送HTTP請求或建立WS/SSE連接
+         * 根據請求方法和代理模式選擇不同的處理方式
+         * @param {boolean} download - 是否為下載請求
          * @returns {Promise<void>}
          */
         async function sendRequest(download = false) {
-            // 每次请求前先清空响应内容
+            // 每次請求前先清空響應內容
             clearResponse();
-            // 设置按钮为加载状态
+            // 設置按鈕為加載狀態
             setRequestButtonsState(true);
 
             try {
-                // 获取基本请求信息
+                // 獲取基本請求信息
                 const methodElement = document.getElementById('httpMethod');
                 const urlElement = document.getElementById('url');
 
                 if (!methodElement || !urlElement) {
-                    throw new Error('无法获取请求方法或URL');
+                    throw new Error('無法獲取請求方法或URL');
                 }
 
                 let method = methodElement.value;
                 let url = urlElement.value;
                 const bodyType = getBodyType();
 
-                // 替换URL中的变量
+                // 替換URL中的變量
                 url = replaceVariables(url)?.trim() || '';
                 const settings = getRequestSettings();
                 url = normalizeUrlWithProtocol(url, settings.default_protocol);
                 if (!url) {
-                    throw new Error('请输入有效的URL');
+                    throw new Error('請輸入有效的URL');
                 }
 
-                // 获取并处理请求头
+                // 獲取並處理請求頭
                 const headers = await buildRequestHeaders();
 
                 const requestOptions = {
@@ -2699,13 +2699,13 @@
                     return;
                 }
 
-                // WS/SSE 逻辑
+                // WS/SSE 邏輯
                 if (useProxy && (method === 'WS' || method === 'SSE')) {
                     await handleWSRequest(url, method, headers, settings);
                     return;
                 }
 
-                // 设置Content-Type并获取请求体
+                // 設置Content-Type並獲取請求體
                 if (bodyType !== 'none' && method !== 'GET') {
                     await setContentTypeAndBody(headers, bodyType, requestOptions);
                 }
@@ -2726,24 +2726,24 @@
             } catch (error) {
                 await handleRequestError(error);
             } finally {
-                // 恢复按钮状态
+                // 恢覆按鈕狀態
                 setRequestButtonsState(false);
             }
         }
 
         /**
-         * 发送请求并下载响应内容
+         * 發送請求並下載響應內容
          * @returns {Promise<void>}
          */
         async function sendRequestAndDownload() {
-            // 每次请求前先清空响应内容
+            // 每次請求前先清空響應內容
             clearResponse();
             await sendRequest(true);
         }
 
         /**
-         * 切换响应标签页
-         * @param {string} tabName - 标签页名称，可选值：'headers' 或 'body'
+         * 切換響應標簽頁
+         * @param {string} tabName - 標簽頁名稱，可選值：'headers' 或 'body'
          */
         function switchResponseTab(tabName) {
             document.querySelectorAll('.response-tab').forEach(tab => tab.classList.remove('active'));
@@ -2757,7 +2757,7 @@
         }
 
         /**
-         * 复制响应内容到剪贴板
+         * 覆制響應內容到剪貼板
          */
         async function copyResponse() {
             const responseBody = document.getElementById('responseBody');
@@ -2765,15 +2765,15 @@
 
             try {
                 await navigator.clipboard.writeText(responseBody.value);
-                console.log('响应内容已复制到剪贴板');
+                console.log('響應內容已覆制到剪貼板');
             } catch (err) {
-                console.error('复制响应内容失败:', err);
+                console.error('覆制響應內容失敗:', err);
             }
         }
 
         /**
-         * 清空响应内容
-         * 清空响应信息、响应体、响应头，并断开WS/SSE连接
+         * 清空響應內容
+         * 清空響應信息、響應體、響應頭，並斷開WS/SSE連接
          */
         function clearResponse() {
             const responseInfo = document.getElementById('responseInfo');
@@ -2787,15 +2787,15 @@
                 if (tbody) tbody.innerHTML = '';
             }
 
-            // 重置JSON格式化状态
+            // 重置JSON格式化狀態
             resetJsonFormatState();
 
-            // 安全关闭连接
+            // 安全關閉連接
             if (currentWS) {
                 try {
                     currentWS.close();
                 } catch (e) {
-                    console.warn('关闭WS连接时出错:', e);
+                    console.warn('關閉WS連接時出錯:', e);
                 }
                 currentWS = null;
             }
@@ -2803,25 +2803,25 @@
                 try {
                     currentSSE.close();
                 } catch (e) {
-                    console.warn('关闭SSE连接时出错:', e);
+                    console.warn('關閉SSE連接時出錯:', e);
                 }
                 currentSSE = null;
             }
         }
 
-        // 历史记录相关函数
-        const MAX_HISTORY_ITEMS = 50; // 最大历史记录数
+        // 歷史記錄相關函數
+        const MAX_HISTORY_ITEMS = 50; // 最大歷史記錄數
 
         /**
-         * 保存当前请求到历史记录
-         * 将当前请求的所有信息（方法、URL、请求头、请求体）保存到localStorage
+         * 保存當前請求到歷史記錄
+         * 將當前請求的所有信息（方法、URL、請求頭、請求體）保存到localStorage
          */
         function saveRequestToHistory() {
             const method = document.getElementById('httpMethod').value;
             const url = document.getElementById('url').value;
             const bodyType = getBodyType();
 
-            // 获取请求头
+            // 獲取請求頭
             const headers = {};
             document.querySelectorAll('#headersList .header-row').forEach(row => {
                 const inputs = row.getElementsByTagName('input');
@@ -2829,17 +2829,17 @@
                 // 只要有key就保存
                 if (inputs[1].value) {
                     headers[inputs[1].value] = {
-                        // 如果value为空，使用空字符串
+                        // 如果value為空，使用空字符串
                         value: inputs[2].value || '',
-                        // 保存复选框状态
+                        // 保存覆選框狀態
                         enabled: isEnabled,
-                        // 保存备注
+                        // 保存備注
                         remark: inputs[3].value || ''
                     };
                 }
             });
 
-            // 获取请求体
+            // 獲取請求體
             let body = null;
             if (bodyType === 'form') {
                 const formData = {};
@@ -2849,11 +2849,11 @@
                     // 只要有key就保存
                     if (inputs[1].value) {
                         formData[inputs[1].value] = {
-                            // 如果value为空，使用空字符串
+                            // 如果value為空，使用空字符串
                             value: inputs[2].value || '',
-                            // 保存复选框状态
+                            // 保存覆選框狀態
                             enabled: isEnabled,
-                            // 保存备注
+                            // 保存備注
                             remark: inputs[3].value || ''
                         };
                     }
@@ -2911,7 +2911,7 @@
                     const isSelected = row.querySelector('input[type="radio"]').checked;
                     const fileInput = row.querySelector('input[type="file"]');
                     const remark = row.querySelector('.body-remark').value;
-                    // 对于文件，我们只能保存文件名，不能保存文件内容
+                    // 對於文件，我們只能保存文件名，不能保存文件內容
                     const fileName = fileInput.files.length > 0 ? fileInput.files[0].name : '';
                     binaryBodyItems.push({
                         fileName,
@@ -2937,7 +2937,7 @@
                 });
                 body = { type: 'websocket', data: wsBodyItems };
             } else if (bodyType !== 'none') {
-                // 对于其他类型的请求体，尝试从多行结构中获取
+                // 對於其他類型的請求體，嘗試從多行結構中獲取
                 body = { type: bodyType, data: document.getElementById('requestBody').value };
             }
 
@@ -2949,13 +2949,13 @@
                 timestamp: new Date().toISOString()
             };
 
-            // 获取现有历史记录
+            // 獲取現有歷史記錄
             let history = StorageManager.get('requestHistory', []);
 
-            // 添加新记录到开头
+            // 添加新記錄到開頭
             history.unshift(historyItem);
 
-            // 限制历史记录数量
+            // 限制歷史記錄數量
             if (history.length > MAX_HISTORY_ITEMS) {
                 history = history.slice(0, MAX_HISTORY_ITEMS);
             }
@@ -2963,33 +2963,33 @@
             // 保存回localStorage
             StorageManager.set('requestHistory', history);
 
-            // 更新显示
+            // 更新顯示
             updateHistoryDisplay();
         }
 
         /**
-         * 从历史记录加载请求
-         * 将历史记录中的请求信息恢复到当前界面
-         * @param {Object} historyItem - 历史记录项
+         * 從歷史記錄加載請求
+         * 將歷史記錄中的請求信息恢覆到當前界面
+         * @param {Object} historyItem - 歷史記錄項
          */
         function loadRequestFromHistory(historyItem) {
-            // 添加数据有效性检查
+            // 添加數據有效性檢查
             if (!historyItem || typeof historyItem !== 'object') {
-                console.error('无效的历史记录数据');
+                console.error('無效的歷史記錄數據');
                 return;
             }
 
             try {
-                // 设置请求方法和URL
+                // 設置請求方法和URL
                 document.getElementById('httpMethod').value = historyItem.method || 'GET';
                 document.getElementById('url').value = historyItem.url || '';
 
-                // 设置请求头
+                // 設置請求頭
                 const headersList = document.getElementById('headersList');
                 headersList.innerHTML = '';
                 if (historyItem.headers && typeof historyItem.headers === 'object') {
                     Object.entries(historyItem.headers).forEach(([key, headerData]) => {
-                        // 添加键值有效性检查
+                        // 添加鍵值有效性檢查
                         if (key) {
                             const headerRow = document.createElement('div');
                             headerRow.className = 'header-row';
@@ -2997,21 +2997,21 @@
                             const value = typeof headerData === 'object' ? headerData.value : headerData;
                             headerRow.innerHTML = `
                                 <input type="checkbox" ${isEnabled ? 'checked' : ''}>
-                                <input type="text" placeholder="Header名称" value="${key}"/>
+                                <input type="text" placeholder="Header名稱" value="${key}"/>
                                 <input type="text" placeholder="Header值" value="${value}"/>
-                                <input type="text" placeholder="备注" class="header-remark input-remark" value="${headerData.remark}"/>
-                                <button class="remove-btn" onclick="removeHeader(this)">删除</button>
+                                <input type="text" placeholder="備注" class="header-remark input-remark" value="${headerData.remark}"/>
+                                <button class="remove-btn" onclick="removeHeader(this)">刪除</button>
                             `;
                             headersList.appendChild(headerRow);
                         }
                     });
                 }
                 if (!headersList.children.length) {
-                    // 添加一个空的请求头行
+                    // 添加一個空的請求頭行
                     addHeader();
                 }
 
-                // 设置请求体
+                // 設置請求體
                 if (historyItem.body && typeof historyItem.body === 'object') {
                     const bodyType = historyItem.body.type;
                     const bodyTypeRadio = document.querySelector(`input[name="bodyType"][value="${bodyType}"]`);
@@ -3023,7 +3023,7 @@
                             const formRows = document.getElementById('formRows');
                             formRows.innerHTML = '';
                             Object.entries(historyItem.body.data).forEach(([key, formData]) => {
-                                // 添加键值有效性检查
+                                // 添加鍵值有效性檢查
                                 if (key) {
                                     const formRow = document.createElement('div');
                                     formRow.className = 'header-row';
@@ -3031,10 +3031,10 @@
                                     const value = typeof formData === 'object' ? formData.value : formData;
                                     formRow.innerHTML = `
                                         <input type="checkbox" ${isEnabled ? 'checked' : ''}>
-                                        <input type="text" placeholder="参数名称" value="${key}"/>
-                                        <input type="text" placeholder="参数值" value="${value}"/>
-                                        <input type="text" placeholder="备注" class="header-remark input-remark" value="${formData.remark}"/>
-                                        <button class="remove-btn" onclick="removeFormRow(this)">删除</button>
+                                        <input type="text" placeholder="參數名稱" value="${key}"/>
+                                        <input type="text" placeholder="參數值" value="${value}"/>
+                                        <input type="text" placeholder="備注" class="header-remark input-remark" value="${formData.remark}"/>
+                                        <button class="remove-btn" onclick="removeFormRow(this)">刪除</button>
                                     `;
                                     formRows.appendChild(formRow);
                                 }
@@ -3043,7 +3043,7 @@
                             const formDataRows = document.getElementById('formDataRows');
                             formDataRows.innerHTML = '';
                             historyItem.body.data.forEach(item => {
-                                // 添加数据有效性检查
+                                // 添加數據有效性檢查
                                 if (item && typeof item === 'object' && item.key) {
                                     const row = createFormDataRow();
                                     row.querySelector('input[type="checkbox"]').checked = item.enabled !== false;
@@ -3053,7 +3053,7 @@
                                     if (item.type === 'text' && item.value !== undefined) {
                                         row.querySelector('.text-input').value = item.value;
                                     }
-                                    // 备注赋值
+                                    // 備注賦值
                                     const remarkInput = row.querySelector('.formdata-remark');
                                     if (remarkInput) remarkInput.value = item.remark || '';
                                     handleTypeChange(typeSelect);
@@ -3092,7 +3092,7 @@
                                     const row = createBinaryBodyRow();
                                     row.querySelector('input[type="radio"]').checked = item.selected || false;
                                     row.querySelector('.body-remark').value = item.remark || '';
-                                    // 注意：文件内容无法恢复，只能显示文件名
+                                    // 注意：文件內容無法恢覆，只能顯示文件名
                                     binaryBodyRows.appendChild(row);
                                 }
                             });
@@ -3101,7 +3101,7 @@
                         }
                     }
                 } else {
-                    // 如果没有请求体，设置为默认值
+                    // 如果沒有請求體，設置為默認值
                     const noneRadio = document.querySelector('input[name="bodyType"][value="none"]');
                     if (noneRadio) {
                         noneRadio.checked = true;
@@ -3109,14 +3109,14 @@
                     }
                 }
             } catch (error) {
-                console.error('加载请求数据时出错:', error);
-                alert('加载请求数据时出错，请检查数据格式是否正确');
+                console.error('加載請求數據時出錯:', error);
+                alert('加載請求數據時出錯，請檢查數據格式是否正確');
             }
         }
 
         /**
-         * 更新历史记录显示
-         * 从localStorage读取历史记录并在页面上显示
+         * 更新歷史記錄顯示
+         * 從localStorage讀取歷史記錄並在頁面上顯示
          */
         function updateHistoryDisplay() {
             const historyList = document.getElementById('historyList');
@@ -3125,7 +3125,7 @@
             historyList.innerHTML = history.map((item, index) => {
                 const date = new Date(item.timestamp);
                 const formattedDate = date.toLocaleString('zh-CN');
-                // 将历史记录项存储在一个自定义属性中
+                // 將歷史記錄項存儲在一個自定義屬性中
                 const safeItem = JSON.stringify(item).replace(/'/g, '&#39;').replace(/"/g, '&quot;');
                 return `
                     <div class="history-item">
@@ -3134,52 +3134,52 @@
                             <span class="history-method">${item.method}</span>
                             <span class="history-url">${item.url}</span>
                         </div>
-                        <button class="history-load-btn" data-history='${safeItem}'>加载请求</button>
+                        <button class="history-load-btn" data-history='${safeItem}'>加載請求</button>
                     </div>
                 `;
             }).join('');
 
-            // 为所有加载按钮添加事件监听器
+            // 為所有加載按鈕添加事件監聽器
             document.querySelectorAll('.history-load-btn').forEach(button => {
                 button.addEventListener('click', function () {
                     try {
                         if (!this.dataset.history && !this.dataset.api) {
-                            console.error('没有找到历史记录数据');
+                            console.error('沒有找到歷史記錄數據');
                             return;
                         }
                         const historyItem = JSON.parse(this.dataset.history || this.dataset.api);
                         if (!historyItem || typeof historyItem !== 'object') {
-                            console.error('无效的历史记录数据');
+                            console.error('無效的歷史記錄數據');
                             return;
                         }
                         loadRequestFromHistory(historyItem);
                     } catch (error) {
-                        console.error('解析历史记录数据时出错:', error);
-                        alert('加载历史记录失败，数据格式可能已损坏');
+                        console.error('解析歷史記錄數據時出錯:', error);
+                        alert('加載歷史記錄失敗，數據格式可能已損壞');
                     }
                 });
             });
         }
 
         /**
-         * 清空所有历史记录
-         * 删除localStorage中的所有历史记录
+         * 清空所有歷史記錄
+         * 刪除localStorage中的所有歷史記錄
          */
         function clearHistory() {
-            if (confirm('确定要清空所有历史记录吗？此操作不可撤销。')) {
+            if (confirm('確定要清空所有歷史記錄嗎？此操作不可撤銷。')) {
                 StorageManager.remove('requestHistory');
                 updateHistoryDisplay();
             }
         }
 
         /**
-         * 导出历史记录
-         * 将历史记录导出为JSON文件
+         * 導出歷史記錄
+         * 將歷史記錄導出為JSON文件
          */
         function exportHistory() {
             const history = StorageManager.get('requestHistory', []);
             if (history.length === 0) {
-                return alert('历史记录为空，无需导出');
+                return alert('歷史記錄為空，無需導出');
             }
 
             const dataStr = JSON.stringify(history, null, 2);
@@ -3195,8 +3195,8 @@
         }
 
         /**
-         * 导入历史记录
-         * 从JSON文件导入历史记录
+         * 導入歷史記錄
+         * 從JSON文件導入歷史記錄
          */
         function importHistory() {
             const fileInput = document.createElement('input');
@@ -3217,38 +3217,38 @@
                         const content = e.target.result;
                         const history = JSON.parse(content);
 
-                        // 数据有效性检查
+                        // 數據有效性檢查
                         if (!Array.isArray(history)) {
-                            throw new Error('导入的历史记录数据格式不正确');
+                            throw new Error('導入的歷史記錄數據格式不正確');
                         }
 
-                        // 限制导入的历史记录数量
+                        // 限制導入的歷史記錄數量
                         const MAX_IMPORT_ITEMS = 50;
                         if (history.length > MAX_IMPORT_ITEMS) {
-                            if (!confirm(`导入的历史记录项超过${MAX_IMPORT_ITEMS}条，是否继续？`)) {
+                            if (!confirm(`導入的歷史記錄項超過${MAX_IMPORT_ITEMS}條，是否繼續？`)) {
                                 return;
                             }
                         }
 
-                        // 获取现有历史记录
+                        // 獲取現有歷史記錄
                         let existingHistory = StorageManager.get('requestHistory', []);
 
-                        // 合并历史记录
+                        // 合並歷史記錄
                         const mergedHistory = [...existingHistory, ...history];
 
-                        // 去重，保留最新的记录
+                        // 去重，保留最新的記錄
                         const uniqueHistory = Array.from(new Map(mergedHistory.map(item => [item.url + JSON.stringify(item.headers), item])).values());
 
-                        // 限制历史记录数量
+                        // 限制歷史記錄數量
                         const finalHistory = uniqueHistory.slice(-MAX_HISTORY_ITEMS);
 
                         // 保存到localStorage
                         StorageManager.set('requestHistory', finalHistory);
 
-                        alert('历史记录导入成功');
+                        alert('歷史記錄導入成功');
                         updateHistoryDisplay();
                     } catch (error) {
-                        alert('导入历史记录时发生错误: ' + error.message);
+                        alert('導入歷史記錄時發生錯誤: ' + error.message);
                     }
                 };
 
@@ -3260,18 +3260,18 @@
         }
 
         /**
-         * 保存当前请求到接口列表
-         * 将当前请求保存到选中的接口集合中
+         * 保存當前請求到接口列表
+         * 將當前請求保存到選中的接口集合中
          */
         function saveToApis() {
-            const name = prompt('请输入接口名称：');
+            const name = prompt('請輸入接口名稱：');
             if (!name) return;
 
             const method = document.getElementById('httpMethod').value;
             const url = document.getElementById('url').value;
             const bodyType = getBodyType();
 
-            // 获取请求头
+            // 獲取請求頭
             const headers = {};
             document.querySelectorAll('#headersList .header-row').forEach(row => {
                 const inputs = row.getElementsByTagName('input');
@@ -3285,7 +3285,7 @@
                 }
             });
 
-            // 获取请求体
+            // 獲取請求體
             let body = null;
             if (bodyType === 'form') {
                 const formData = {};
@@ -3352,7 +3352,7 @@
                     const isSelected = row.querySelector('input[type="radio"]').checked;
                     const fileInput = row.querySelector('input[type="file"]');
                     const remark = row.querySelector('.body-remark').value;
-                    // 对于文件，我们只能保存文件名，不能保存文件内容
+                    // 對於文件，我們只能保存文件名，不能保存文件內容
                     const fileName = fileInput.files.length > 0 ? fileInput.files[0].name : '';
                     binaryBodyItems.push({
                         fileName,
@@ -3390,7 +3390,7 @@
                 timestamp: new Date().toISOString()
             };
 
-            // 选择集合
+            // 選擇集合
             let collections = getApiCollections();
             let current = getCurrentCollectionName();
             let collection = collections.find(c => c.name === current);
@@ -3405,8 +3405,8 @@
         }
 
         /**
-         * 更新接口列表显示
-         * 从localStorage读取接口列表并在页面上显示
+         * 更新接口列表顯示
+         * 從localStorage讀取接口列表並在頁面上顯示
          */
         function updateApisDisplay() {
             const apisList = document.getElementById('apisList');
@@ -3426,8 +3426,8 @@
                             <span class="history-method">${item.method}</span>
                             <span class="history-url">${item.url}</span>
                         </div>
-                        <button class="history-load-btn" data-api='${safeItem}'>加载请求</button>
-                        <button class="remove-btn" onclick="removeApi(${index})">删除</button>
+                        <button class="history-load-btn" data-api='${safeItem}'>加載請求</button>
+                        <button class="remove-btn" onclick="removeApi(${index})">刪除</button>
                     </div>
                 `;
             }).join('');
@@ -3441,11 +3441,11 @@
         }
 
         /**
-         * 删除接口
-         * @param {number} index - 要删除的接口索引
+         * 刪除接口
+         * @param {number} index - 要刪除的接口索引
          */
         function removeApi(index) {
-            if (!confirm('确定要删除这个接口吗？此操作不可撤销。')) {
+            if (!confirm('確定要刪除這個接口嗎？此操作不可撤銷。')) {
                 return;
             }
             let collections = getApiCollections();
@@ -3459,10 +3459,10 @@
         }
 
         /**
-         * 清空当前集合下的所有接口
+         * 清空當前集合下的所有接口
          */
         function clearApis() {
-            if (!confirm('确定要清空当前集合下所有接口吗？此操作不可撤销。')) {
+            if (!confirm('確定要清空當前集合下所有接口嗎？此操作不可撤銷。')) {
                 return;
             }
             let collections = getApiCollections();
@@ -3476,15 +3476,15 @@
         }
 
         /**
-         * 导出接口列表
-         * 将当前集合的接口列表导出为JSON文件
+         * 導出接口列表
+         * 將當前集合的接口列表導出為JSON文件
          */
         function exportApis() {
             let collections = getApiCollections();
             let current = getCurrentCollectionName();
             let collection = collections.find(c => c.name === current);
             if (!collection || collection.apis.length === 0) {
-                return alert('当前集合接口列表为空，无需导出');
+                return alert('當前集合接口列表為空，無需導出');
             }
             const dataStr = JSON.stringify(collection.apis, null, 2);
             const blob = new Blob([dataStr], { type: 'application/json' });
@@ -3499,8 +3499,8 @@
         }
 
         /**
-         * 导入接口列表
-         * 从JSON文件导入接口列表
+         * 導入接口列表
+         * 從JSON文件導入接口列表
          */
         function importApis() {
             const fileInput = document.createElement('input');
@@ -3519,7 +3519,7 @@
                         const content = e.target.result;
                         const apis = JSON.parse(content);
                         if (!Array.isArray(apis)) {
-                            throw new Error('导入的接口数据格式不正确');
+                            throw new Error('導入的接口數據格式不正確');
                         }
                         let collections = getApiCollections();
                         let current = getCurrentCollectionName();
@@ -3528,16 +3528,16 @@
                             collection = { name: current, apis: [] };
                             collections.push(collection);
                         }
-                        // 合并接口列表
+                        // 合並接口列表
                         const mergedApis = [...collection.apis, ...apis];
-                        // 去重，保留最新的记录
+                        // 去重，保留最新的記錄
                         const uniqueApis = Array.from(new Map(mergedApis.map(item => [item.name, item])).values());
                         collection.apis = uniqueApis;
                         setApiCollections(collections);
-                        alert('接口列表导入成功');
+                        alert('接口列表導入成功');
                         updateApisDisplay();
                     } catch (error) {
-                        alert('导入接口列表时发生错误: ' + error.message);
+                        alert('導入接口列表時發生錯誤: ' + error.message);
                     }
                 };
                 reader.readAsText(file);
@@ -3547,8 +3547,8 @@
         }
 
         /**
-         * 添加变量行
-         * 在变量表格中添加一个新的变量行
+         * 添加變量行
+         * 在變量表格中添加一個新的變量行
          */
         function addVariableRow() {
             const tbody = document.getElementById('variablesTableBody');
@@ -3557,22 +3557,22 @@
                 <td><input type="checkbox" checked></td>
                 <td><input type="text" class="var-name"></td>
                 <td><input type="text" class="var-value"></td>
-                <td><button class="remove-btn" onclick="removeVariableRow(this)">删除</button></td>
+                <td><button class="remove-btn" onclick="removeVariableRow(this)">刪除</button></td>
             `;
             tbody.appendChild(row);
         }
 
         /**
-         * 删除变量行
-         * @param {HTMLElement} button - 删除按钮元素
+         * 刪除變量行
+         * @param {HTMLElement} button - 刪除按鈕元素
          */
         function removeVariableRow(button) {
             button.closest('tr').remove();
         }
 
         /**
-         * 保存变量配置
-         * 将变量表格中的内容保存到localStorage
+         * 保存變量配置
+         * 將變量表格中的內容保存到localStorage
          */
         function saveVariables() {
             const rows = document.querySelectorAll('#variablesTableBody tr');
@@ -3584,13 +3584,13 @@
                 const name = row.querySelector('.var-name').value.trim();
                 const value = row.querySelector('.var-value').value.trim();
 
-                // 检查变量名和值是否包含非法字符
+                // 檢查變量名和值是否包含非法字符
                 if (name.includes('{') || name.includes('}') || value.includes('{') || value.includes('}')) {
-                    alert('变量名和变量值不能包含 { 或 } 字符');
+                    alert('變量名和變量值不能包含 { 或 } 字符');
                     return;
                 }
 
-                // 添加到配置数组
+                // 添加到配置數組
                 envConf.push({
                     row_id: index + 1,
                     enable: enable,
@@ -3598,13 +3598,13 @@
                     env_value: value
                 });
 
-                // 如果启用且有变量名，则添加到最终变量映射
+                // 如果啟用且有變量名，則添加到最終變量映射
                 if (enable && name) {
                     envData.set(name, value);
                 }
             });
 
-            // 转换为数组格式
+            // 轉換為數組格式
             const envDataArray = Array.from(envData.entries()).map(([env_name, env_value]) => ({
                 env_name,
                 env_value
@@ -3614,12 +3614,12 @@
             StorageManager.set('env_conf', envConf);
             StorageManager.set('env_data', envDataArray);
 
-            alert('变量保存成功');
+            alert('變量保存成功');
         }
 
         /**
-         * 加载变量配置
-         * 从localStorage读取变量配置并显示在表格中
+         * 加載變量配置
+         * 從localStorage讀取變量配置並顯示在表格中
          */
         function loadVariables() {
             const envConf = StorageManager.get('env_conf', []);
@@ -3632,7 +3632,7 @@
                     <td><input type="checkbox" ${item.enable ? 'checked' : ''}></td>
                     <td><input type="text" class="var-name" value="${item.env_name}"></td>
                     <td><input type="text" class="var-value" value="${item.env_value}"></td>
-                    <td><button class="remove-btn" onclick="removeVariableRow(this)">删除</button></td>
+                    <td><button class="remove-btn" onclick="removeVariableRow(this)">刪除</button></td>
                 `;
                 tbody.appendChild(row);
             });
@@ -3643,11 +3643,11 @@
         }
 
         /**
-         * 清空所有变量
-         * 删除localStorage中的所有变量配置
+         * 清空所有變量
+         * 刪除localStorage中的所有變量配置
          */
         function clearVariables() {
-            if (confirm('确定要清空所有变量吗？此操作不可撤销。')) {
+            if (confirm('確定要清空所有變量嗎？此操作不可撤銷。')) {
                 StorageManager.remove('env_conf');
                 StorageManager.remove('env_data');
                 loadVariables();
@@ -3655,13 +3655,13 @@
         }
 
         /**
-         * 导出变量配置
-         * 将变量配置导出为JSON文件
+         * 導出變量配置
+         * 將變量配置導出為JSON文件
          */
         function exportVariables() {
             const envConf = StorageManager.get('env_conf', []);
             if (envConf.length === 0) {
-                return alert('没有可导出的变量');
+                return alert('沒有可導出的變量');
             }
 
             const dataStr = JSON.stringify(envConf, null, 2);
@@ -3677,8 +3677,8 @@
         }
 
         /**
-         * 导入变量配置
-         * 从JSON文件导入变量配置
+         * 導入變量配置
+         * 從JSON文件導入變量配置
          */
         function importVariables() {
             const fileInput = document.createElement('input');
@@ -3700,14 +3700,14 @@
                         const envConf = JSON.parse(content);
 
                         if (!Array.isArray(envConf)) {
-                            throw new Error('导入的变量数据格式不正确');
+                            throw new Error('導入的變量數據格式不正確');
                         }
 
                         StorageManager.set('env_conf', envConf);
                         loadVariables();
-                        alert('变量导入成功');
+                        alert('變量導入成功');
                     } catch (error) {
-                        alert('导入变量时发生错误: ' + error.message);
+                        alert('導入變量時發生錯誤: ' + error.message);
                     }
                 };
 
@@ -3719,10 +3719,10 @@
         }
 
         /**
-         * 替换变量
-         * 将文本中的{{变量名}}替换为对应的变量值
-         * @param {string} text - 要替换的文本
-         * @returns {string} 替换后的文本
+         * 替換變量
+         * 將文本中的{{變量名}}替換為對應的變量值
+         * @param {string} text - 要替換的文本
+         * @returns {string} 替換後的文本
          */
         function replaceVariables(text) {
             if (!text) return text;
@@ -3739,18 +3739,18 @@
         }
 
         /**
-         * 清空所有全局请求头
+         * 清空所有全局請求頭
          */
         function clearGlobalHeaders() {
-            if (confirm('确定要清空所有全局头吗？此操作不可撤销。')) {
+            if (confirm('確定要清空所有全局頭嗎？此操作不可撤銷。')) {
                 StorageManager.remove('globalHeaders');
                 updateGlobalHeadersDisplay();
             }
         }
 
         /**
-         * 添加全局请求头行
-         * 在全局请求头表格中添加一个新的请求头行
+         * 添加全局請求頭行
+         * 在全局請求頭表格中添加一個新的請求頭行
          */
         function addGlobalHeaderRow() {
             const tbody = document.getElementById('globalHeadersTableBody');
@@ -3759,22 +3759,22 @@
                 <td><input type="checkbox" checked></td>
                 <td><input type="text" class="header-name"></td>
                 <td><input type="text" class="header-value"></td>
-                <td><button class="remove-btn" onclick="removeGlobalHeaderRow(this)">删除</button></td>
+                <td><button class="remove-btn" onclick="removeGlobalHeaderRow(this)">刪除</button></td>
             `;
             tbody.appendChild(row);
         }
 
         /**
-         * 删除全局请求头行
-         * @param {HTMLElement} button - 删除按钮元素
+         * 刪除全局請求頭行
+         * @param {HTMLElement} button - 刪除按鈕元素
          */
         function removeGlobalHeaderRow(button) {
             button.closest('tr').remove();
         }
 
         /**
-         * 保存全局请求头配置
-         * 将全局请求头表格中的内容保存到localStorage
+         * 保存全局請求頭配置
+         * 將全局請求頭表格中的內容保存到localStorage
          */
         function saveGlobalHeaders() {
             const rows = document.querySelectorAll('#globalHeadersTableBody tr');
@@ -3786,7 +3786,7 @@
                 const name = row.querySelector('.header-name').value.trim();
                 const value = row.querySelector('.header-value').value.trim();
 
-                // 添加到配置数组
+                // 添加到配置數組
                 headerConf.push({
                     row_id: index + 1,
                     enable: enable,
@@ -3794,13 +3794,13 @@
                     header_value: value
                 });
 
-                // 如果启用且有请求头名称，则添加到最终映射
+                // 如果啟用且有請求頭名稱，則添加到最終映射
                 if (enable && name) {
                     headerData.set(name, value);
                 }
             });
 
-            // 转换为数组格式
+            // 轉換為數組格式
             const headerDataArray = Array.from(headerData.entries()).map(([header_name, header_value]) => ({
                 header_name,
                 header_value
@@ -3810,12 +3810,12 @@
             StorageManager.set('header_conf', headerConf);
             StorageManager.set('header_data', headerDataArray);
 
-            alert('全局请求头保存成功');
+            alert('全局請求頭保存成功');
         }
 
         /**
-         * 加载全局请求头配置
-         * 从localStorage读取全局请求头配置并显示在表格中
+         * 加載全局請求頭配置
+         * 從localStorage讀取全局請求頭配置並顯示在表格中
          */
         function loadGlobalHeaders() {
             const headerConf = StorageManager.get('header_conf', []);
@@ -3828,7 +3828,7 @@
                     <td><input type="checkbox" ${item.enable ? 'checked' : ''}></td>
                     <td><input type="text" class="header-name" value="${item.header_name}"></td>
                     <td><input type="text" class="header-value" value="${item.header_value}"></td>
-                    <td><button class="remove-btn" onclick="removeGlobalHeaderRow(this)">删除</button></td>
+                    <td><button class="remove-btn" onclick="removeGlobalHeaderRow(this)">刪除</button></td>
                 `;
                 tbody.appendChild(row);
             });
@@ -3839,11 +3839,11 @@
         }
 
         /**
-         * 清空所有全局请求头
-         * 删除localStorage中的所有全局请求头配置
+         * 清空所有全局請求頭
+         * 刪除localStorage中的所有全局請求頭配置
          */
         function clearGlobalHeaders() {
-            if (confirm('确定要清空所有全局请求头吗？此操作不可撤销。')) {
+            if (confirm('確定要清空所有全局請求頭嗎？此操作不可撤銷。')) {
                 StorageManager.remove('header_conf');
                 StorageManager.remove('header_data');
                 loadGlobalHeaders();
@@ -3851,13 +3851,13 @@
         }
 
         /**
-         * 导出全局请求头配置
-         * 将全局请求头配置导出为JSON文件
+         * 導出全局請求頭配置
+         * 將全局請求頭配置導出為JSON文件
          */
         function exportGlobalHeaders() {
             const headerConf = StorageManager.get('header_conf', []);
             if (headerConf.length === 0) {
-                return alert('没有可导出的全局请求头');
+                return alert('沒有可導出的全局請求頭');
             }
 
             const dataStr = JSON.stringify(headerConf, null, 2);
@@ -3873,8 +3873,8 @@
         }
 
         /**
-         * 导入全局请求头配置
-         * 从JSON文件导入全局请求头配置
+         * 導入全局請求頭配置
+         * 從JSON文件導入全局請求頭配置
          */
         function importGlobalHeaders() {
             const fileInput = document.createElement('input');
@@ -3896,14 +3896,14 @@
                         const headerConf = JSON.parse(content);
 
                         if (!Array.isArray(headerConf)) {
-                            throw new Error('导入的全局请求头数据格式不正确');
+                            throw new Error('導入的全局請求頭數據格式不正確');
                         }
 
                         StorageManager.set('header_conf', headerConf);
                         loadGlobalHeaders();
-                        alert('全局请求头导入成功');
+                        alert('全局請求頭導入成功');
                     } catch (error) {
-                        alert('导入全局请求头时发生错误: ' + error.message);
+                        alert('導入全局請求頭時發生錯誤: ' + error.message);
                     }
                 };
 
@@ -3915,9 +3915,9 @@
         }
 
         /**
-         * 获取全局请求头
-         * 从localStorage读取全局请求头并返回对象
-         * @returns {Object} 全局请求头对象
+         * 獲取全局請求頭
+         * 從localStorage讀取全局請求頭並返回對象
+         * @returns {Object} 全局請求頭對象
          */
         function getGlobalHeaders() {
             const headerData = StorageManager.get('header_data', []);
@@ -3931,8 +3931,8 @@
         }
 
         /**
-         * 打开设置对话框
-         * 显示请求配置设置对话框
+         * 打開設置對話框
+         * 顯示請求配置設置對話框
          */
         function openSettings() {
             document.getElementById('dialogOverlay').style.display = 'block';
@@ -3941,8 +3941,8 @@
         }
 
         /**
-         * 关闭设置对话框
-         * 隐藏请求配置设置对话框
+         * 關閉設置對話框
+         * 隱藏請求配置設置對話框
          */
         function closeSettings() {
             document.getElementById('dialogOverlay').style.display = 'none';
@@ -3950,8 +3950,8 @@
         }
 
         /**
-         * 加载设置到对话框
-         * 从localStorage读取当前设置并显示在对话框中
+         * 加載設置到對話框
+         * 從localStorage讀取當前設置並顯示在對話框中
          */
         function loadSettings() {
             const currentSettings = getRequestSettings();
@@ -3976,8 +3976,8 @@
         }
 
         /**
-         * 保存设置
-         * 将对话框中的设置保存到localStorage
+         * 保存設置
+         * 將對話框中的設置保存到localStorage
          */
         function saveSettings() {
             const settings = {
@@ -4005,9 +4005,9 @@
         }
 
         /**
-         * 获取请求设置
-         * 从localStorage读取请求设置，如果没有则使用默认值
-         * @returns {Object} 请求设置对象
+         * 獲取請求設置
+         * 從localStorage讀取請求設置，如果沒有則使用默認值
+         * @returns {Object} 請求設置對象
          */
         function getRequestSettings() {
             const settings = StorageManager.get('requestSettings', {});
@@ -4032,8 +4032,8 @@
         }
 
         /**
-         * 处理Referrer设置变化
-         * 当Referrer选择为自定义时显示自定义输入框
+         * 處理Referrer設置變化
+         * 當Referrer選擇為自定義時顯示自定義輸入框
          */
         function handleReferrerChange() {
             const referrerSelect = document.getElementById('settingReferrer');
@@ -4042,8 +4042,8 @@
         }
 
         /**
-         * 切换侧边栏面板标签页
-         * @param {string} tab - 标签页名称
+         * 切換側邊欄面板標簽頁
+         * @param {string} tab - 標簽頁名稱
          */
         function switchPanelTab(tab) {
             document.querySelectorAll('.panel-tab').forEach(tabElement => tabElement.classList.remove('active'));
@@ -4055,13 +4055,13 @@
             activeTab.classList.add('active');
             activeContent.classList.add('active');
 
-            // 保存最后选中的标签页
+            // 保存最後選中的標簽頁
             StorageManager.set('lastActiveTab', tab);
         }
 
         /**
-         * 导出所有配置
-         * 将历史记录、接口集合、变量、全局请求头、请求设置导出为JSON文件
+         * 導出所有配置
+         * 將歷史記錄、接口集合、變量、全局請求頭、請求設置導出為JSON文件
          */
         function exportAllConfig() {
             const config = {
@@ -4085,8 +4085,8 @@
         }
 
         /**
-         * 导入所有配置
-         * 从JSON文件导入所有配置
+         * 導入所有配置
+         * 從JSON文件導入所有配置
          */
         function importAllConfig() {
             const fileInput = document.createElement('input');
@@ -4107,51 +4107,51 @@
                         const content = e.target.result;
                         const config = JSON.parse(content);
 
-                        // 验证配置格式
+                        // 驗證配置格式
                         if (typeof config !== 'object') {
-                            throw new Error('导入的配置文件格式不正确');
+                            throw new Error('導入的配置文件格式不正確');
                         }
 
-                        // 导入历史记录
+                        // 導入歷史記錄
                         if (Array.isArray(config.history)) {
                             StorageManager.set('requestHistory', config.history);
                         }
 
-                        // 导入接口集合
+                        // 導入接口集合
                         if (Array.isArray(config.apiCollections)) {
                             StorageManager.set('apiCollections', config.apiCollections);
-                            // 默认选中第一个集合
+                            // 默認選中第一個集合
                             if (config.apiCollections.length > 0) {
                                 setCurrentCollectionName(config.apiCollections[0].name);
                             }
                         }
 
-                        // 导入变量配置
+                        // 導入變量配置
                         if (Array.isArray(config.variables)) {
                             StorageManager.set('env_conf', config.variables);
-                            // 更新变量数据
+                            // 更新變量數據
                             const envData = config.variables
                                 .filter(item => item.enable)
                                 .map(({ env_name, env_value }) => ({ env_name, env_value }));
                             StorageManager.set('env_data', envData);
                         }
 
-                        // 导入全局请求头
+                        // 導入全局請求頭
                         if (Array.isArray(config.globalHeaders)) {
                             StorageManager.set('header_conf', config.globalHeaders);
-                            // 更新请求头数据
+                            // 更新請求頭數據
                             const headerData = config.globalHeaders
                                 .filter(item => item.enable)
                                 .map(({ header_name, header_value }) => ({ header_name, header_value }));
                             StorageManager.set('header_data', headerData);
                         }
 
-                        // 导入请求配置
+                        // 導入請求配置
                         if (typeof config.requestSettings === 'object') {
                             StorageManager.set('requestSettings', config.requestSettings);
                         }
 
-                        // 更新所有显示
+                        // 更新所有顯示
                         updateHistoryDisplay();
                         updateApisDisplay();
                         loadVariables();
@@ -4159,9 +4159,9 @@
                         loadSettings();
                         updateApiCollectionSelect();
 
-                        alert('配置导入成功');
+                        alert('配置導入成功');
                     } catch (error) {
-                        alert('导入配置时发生错误: ' + error.message);
+                        alert('導入配置時發生錯誤: ' + error.message);
                     }
                 };
 
@@ -4172,19 +4172,19 @@
             document.body.removeChild(fileInput);
         }
 
-        // 集合相关逻辑
+        // 集合相關邏輯
         function getApiCollections() {
             let collections = StorageManager.get('apiCollections', []);
-            // 兼容老数据迁移
+            // 兼容老數據遷移
             if (collections.length === 0) {
                 let oldApis = StorageManager.get('savedApis', []);
-                collections = [{ name: '默认集合', apis: oldApis }];
+                collections = [{ name: '默認集合', apis: oldApis }];
                 StorageManager.set('apiCollections', collections);
                 StorageManager.remove('savedApis');
             }
-            // 如果依然没有集合，自动创建一个默认集合
+            // 如果依然沒有集合，自動創建一個默認集合
             if (collections.length === 0) {
-                collections = [{ name: '默认集合', apis: [] }];
+                collections = [{ name: '默認集合', apis: [] }];
                 StorageManager.set('apiCollections', collections);
             }
             return collections;
@@ -4195,7 +4195,7 @@
         }
 
         function getCurrentCollectionName() {
-            return StorageManager.get('currentApiCollection', '默认集合');
+            return StorageManager.get('currentApiCollection', '默認集合');
         }
 
         function setCurrentCollectionName(name) {
@@ -4203,17 +4203,17 @@
         }
 
         /**
-         * 更新接口集合选择下拉框
-         * 根据当前集合列表更新下拉框选项
+         * 更新接口集合選擇下拉框
+         * 根據當前集合列表更新下拉框選項
          */
         function updateApiCollectionSelect() {
             const collections = getApiCollections();
             const select = document.getElementById('apiCollectionSelect');
             select.innerHTML = collections.map(c => `<option value="${c.name}">${c.name}</option>`).join('');
-            // 选中当前集合
+            // 選中當前集合
             let current = getCurrentCollectionName();
             if (!collections.some(c => c.name === current)) {
-                // 如果当前集合不存在，默认选第一个
+                // 如果當前集合不存在，默認選第一個
                 current = collections.length > 0 ? collections[0].name : '';
                 setCurrentCollectionName(current);
             }
@@ -4221,8 +4221,8 @@
         }
 
         /**
-         * 切换接口集合
-         * 当用户选择不同的接口集合时更新显示
+         * 切換接口集合
+         * 當用戶選擇不同的接口集合時更新顯示
          */
         function switchApiCollection() {
             const select = document.getElementById('apiCollectionSelect');
@@ -4232,10 +4232,10 @@
 
         /**
          * 添加新的接口集合
-         * 创建新的接口集合并设置为当前选中
+         * 創建新的接口集合並設置為當前選中
          */
         function addApiCollection() {
-            const name = prompt('请输入新集合名称：');
+            const name = prompt('請輸入新集合名稱：');
             if (!name) return;
             let collections = getApiCollections();
             if (collections.some(c => c.name === name)) {
@@ -4250,41 +4250,41 @@
         }
 
         /**
-         * 删除当前接口集合
-         * 删除当前选中的接口集合，默认集合不能删除
+         * 刪除當前接口集合
+         * 刪除當前選中的接口集合，默認集合不能刪除
          */
         function removeApiCollection() {
             const current = getCurrentCollectionName();
-            if (current === '默认集合') {
-                alert('默认集合不能删除');
+            if (current === '默認集合') {
+                alert('默認集合不能刪除');
                 return;
             }
-            if (!confirm('确定要删除集合及其所有接口吗？')) return;
+            if (!confirm('確定要刪除集合及其所有接口嗎？')) return;
             let collections = getApiCollections();
             collections = collections.filter(c => c.name !== current);
             setApiCollections(collections);
-            setCurrentCollectionName('默认集合');
+            setCurrentCollectionName('默認集合');
             updateApiCollectionSelect();
             updateApisDisplay();
         }
 
         /**
-         * 新建请求
-         * 清空当前请求的所有内容，包括URL、请求头、请求体、响应等
+         * 新建請求
+         * 清空當前請求的所有內容，包括URL、請求頭、請求體、響應等
          */
         function newRequest() {
             // 清空URL
             const urlInput = document.getElementById('url');
             if (urlInput) urlInput.value = '';
 
-            // 清空请求头
+            // 清空請求頭
             const headersList = document.getElementById('headersList');
             if (headersList) {
                 headersList.innerHTML = '';
                 addHeader();
             }
 
-            // 清空多行请求体
+            // 清空多行請求體
             const jsonBodyRows = document.getElementById('jsonBodyRows');
             if (jsonBodyRows) {
                 jsonBodyRows.innerHTML = '';
@@ -4298,7 +4298,7 @@
                 binaryBodyRows.innerHTML = '';
             }
 
-            // 清空form表单
+            // 清空form表單
             const formRows = document.getElementById('formRows');
             if (formRows) {
                 formRows.innerHTML = '';
@@ -4312,30 +4312,30 @@
                 addFormDataRow();
             }
 
-            // 清空WebSocket消息体
+            // 清空WebSocket消息體
             const wsBodyRows = document.getElementById('wsBodyRows');
             if (wsBodyRows) {
                 wsBodyRows.innerHTML = '';
             }
 
-            // 重置body类型为none
+            // 重置body類型為none
             const noneRadio = document.querySelector('input[name="bodyType"][value="none"]');
             if (noneRadio) {
                 noneRadio.checked = true;
                 updateBodyType('none');
             }
 
-            // 清空响应信息
+            // 清空響應信息
             clearResponse();
         }
 
-        // JSON格式化高亮相关变量
+        // JSON格式化高亮相關變量
         let formattedJson = '';
         let isJsonFormatted = false;
 
         /**
-         * 格式化响应体中的JSON内容并高亮显示
-         * 解析并格式化JSON字符串，渲染为高亮DOM结构
+         * 格式化響應體中的JSON內容並高亮顯示
+         * 解析並格式化JSON字符串，渲染為高亮DOM結構
          * @returns {void}
          */
         function formatJsonResponse() {
@@ -4352,38 +4352,38 @@
             try {
                 const rawJson = responseBody.value.trim();
                 if (!rawJson) {
-                    alert('没有JSON内容可格式化');
+                    alert('沒有JSON內容可格式化');
                     return;
                 }
 
                 const jsonObj = JSON.parse(rawJson);
                 formattedJson = JSON.stringify(jsonObj, null, 4);
 
-                // 渲染格式化后的JSON
+                // 渲染格式化後的JSON
                 renderJsonWithDom(jsonObj);
 
-                // 显示格式化容器，隐藏原始textarea
+                // 顯示格式化容器，隱藏原始textarea
                 jsonFormattedContainer.style.display = 'block';
                 responseBody.style.display = 'none';
                 copyFormattedBtn.style.display = 'inline-block';
                 isJsonFormatted = true;
 
             } catch (error) {
-                alert('JSON格式错误: ' + (error.message || error));
-                console.error('JSON格式化失败:', error);
+                alert('JSON格式錯誤: ' + (error.message || error));
+                console.error('JSON格式化失敗:', error);
             }
         }
 
         /**
-         * 复制格式化后的JSON字符串到剪贴板
+         * 覆制格式化後的JSON字符串到剪貼板
          * @returns {void}
          */
         /**
-         * 复制格式化JSON到剪贴板
+         * 覆制格式化JSON到剪貼板
          */
         async function copyFormattedJson() {
             if (!formattedJson) {
-                alert("请先格式化JSON数据");
+                alert("請先格式化JSON數據");
                 return;
             }
 
@@ -4393,24 +4393,24 @@
                 await navigator.clipboard.writeText(formattedJson);
 
                 if (copyFormattedBtn) {
-                    copyFormattedBtn.textContent = "✓ 已复制!";
+                    copyFormattedBtn.textContent = "✓ 已覆制!";
                     setTimeout(() => {
                         if (copyFormattedBtn) {
-                            copyFormattedBtn.textContent = "复制格式化JSON";
+                            copyFormattedBtn.textContent = "覆制格式化JSON";
                         }
                     }, 2000);
                 }
-                console.log('格式化JSON已复制到剪贴板');
+                console.log('格式化JSON已覆制到剪貼板');
             } catch (err) {
-                console.error('复制格式化JSON失败:', err);
-                alert("复制失败，请手动复制内容");
+                console.error('覆制格式化JSON失敗:', err);
+                alert("覆制失敗，請手動覆制內容");
             }
         }
 
         /**
          * JSON格式化:使用DOM渲染JSON
-         * 将JSON数据渲染为可折叠的DOM结构，支持展开/收起功能
-         * @param {any} data - 要渲染的JSON数据
+         * 將JSON數據渲染為可折疊的DOM結構，支持展開/收起功能
+         * @param {any} data - 要渲染的JSON數據
          */
         function renderJsonWithDom(data) {
             const jsonFormattedContainer = document.getElementById('jsonFormattedContainer');
@@ -4422,10 +4422,10 @@
         }
 
         /**
-         * JSON格式化:处理不同类型的值
-         * 根据数据类型创建对应的DOM元素，支持null、数组、对象、字符串、数字、布尔值
+         * JSON格式化:處理不同類型的值
+         * 根據數據類型創建對應的DOM元素，支持null、數組、對象、字符串、數字、布爾值
          * @param {HTMLElement} parent - 父元素
-         * @param {any} data - 要处理的数据
+         * @param {any} data - 要處理的數據
          */
         function processValue(parent, data) {
             if (data === null) {
@@ -4444,21 +4444,21 @@
         }
 
         /**
-         * JSON格式化:处理数组
-         * 创建可折叠的数组DOM结构，支持展开/收起功能
+         * JSON格式化:處理數組
+         * 創建可折疊的數組DOM結構，支持展開/收起功能
          * @param {HTMLElement} parent - 父元素
-         * @param {Array} arr - 要处理的数组
+         * @param {Array} arr - 要處理的數組
          */
         function processArray(parent, arr) {
             if (arr.length === 0) {
                 createAndAppendSpan(parent, '[]', 'json-bracket');
                 return;
             }
-            // 折叠按钮
+            // 折疊按鈕
             const arrow = document.createElement('span');
             arrow.textContent = '▼';
             arrow.className = 'json-arrow';
-            // 括号
+            // 括號
             const bracketSpan = document.createElement('span');
             bracketSpan.textContent = '[';
             bracketSpan.className = 'json-bracket';
@@ -4473,13 +4473,13 @@
                 }
                 itemsContainer.appendChild(itemDiv);
             });
-            // 结束括号
+            // 結束括號
             const endBracketDiv = document.createElement('div');
             const endBracketSpan = document.createElement('span');
             endBracketSpan.textContent = ']';
             endBracketSpan.className = 'json-bracket';
             endBracketDiv.appendChild(endBracketSpan);
-            // 折叠逻辑
+            // 折疊邏輯
             arrow.onclick = function () {
                 if (itemsContainer.style.display === 'none') {
                     itemsContainer.style.display = '';
@@ -4491,7 +4491,7 @@
                     arrow.textContent = '▶';
                 }
             };
-            // 组装
+            // 組裝
             const headerDiv = document.createElement('div');
             headerDiv.appendChild(arrow);
             headerDiv.appendChild(bracketSpan);
@@ -4501,10 +4501,10 @@
         }
 
         /**
-         * JSON格式化:处理对象
-         * 创建可折叠的对象DOM结构，支持展开/收起功能
+         * JSON格式化:處理對象
+         * 創建可折疊的對象DOM結構，支持展開/收起功能
          * @param {HTMLElement} parent - 父元素
-         * @param {Object} obj - 要处理的对象
+         * @param {Object} obj - 要處理的對象
          */
         function processObject(parent, obj) {
             const keys = Object.keys(obj);
@@ -4512,15 +4512,15 @@
                 createAndAppendSpan(parent, '{}', 'json-bracket');
                 return;
             }
-            // 折叠按钮
+            // 折疊按鈕
             const arrow = document.createElement('span');
             arrow.textContent = '▼';
             arrow.className = 'json-arrow';
-            // 括号
+            // 括號
             const bracketSpan = document.createElement('span');
             bracketSpan.textContent = '{';
             bracketSpan.className = 'json-bracket';
-            // 属性容器
+            // 屬性容器
             const propsContainer = document.createElement('div');
             propsContainer.className = 'json-container';
             keys.forEach((key, i) => {
@@ -4533,13 +4533,13 @@
                 }
                 propsContainer.appendChild(propDiv);
             });
-            // 结束括号
+            // 結束括號
             const endBracketDiv = document.createElement('div');
             const endBracketSpan = document.createElement('span');
             endBracketSpan.textContent = '}';
             endBracketSpan.className = 'json-bracket';
             endBracketDiv.appendChild(endBracketSpan);
-            // 折叠逻辑
+            // 折疊邏輯
             arrow.onclick = function () {
                 if (propsContainer.style.display === 'none') {
                     propsContainer.style.display = '';
@@ -4551,7 +4551,7 @@
                     arrow.textContent = '▶';
                 }
             };
-            // 组装
+            // 組裝
             const headerDiv = document.createElement('div');
             headerDiv.appendChild(arrow);
             headerDiv.appendChild(bracketSpan);
@@ -4561,12 +4561,12 @@
         }
 
         /**
-         * JSON格式化:创建并添加带样式的span
-         * 创建带样式的span元素并添加到父元素中
+         * JSON格式化:創建並添加帶樣式的span
+         * 創建帶樣式的span元素並添加到父元素中
          * @param {HTMLElement} parent - 父元素
-         * @param {string} content - 内容
-         * @param {string} className - CSS类名
-         * @param {boolean} newLine - 是否换行
+         * @param {string} content - 內容
+         * @param {string} className - CSS類名
+         * @param {boolean} newLine - 是否換行
          */
         function createAndAppendSpan(parent, content, className, newLine = false) {
             const span = document.createElement('span');
@@ -4583,9 +4583,9 @@
         }
 
         /**
-         * SSE流式Fetch响应处理函数
-         * 处理fetch返回的SSE流式响应，实时显示数据
-         * @param {Response} response - fetch响应对象
+         * SSE流式Fetch響應處理函數
+         * 處理fetch返回的SSE流式響應，實時顯示數據
+         * @param {Response} response - fetch響應對象
          * @returns {Promise<void>}
          */
         async function handleSSEFetchResponse(response) {
@@ -4593,9 +4593,9 @@
             const responseBody = document.getElementById('responseBody');
             const responseHeadersTable = document.getElementById('responseHeaders')?.getElementsByTagName('tbody')[0];
 
-            if (responseInfo) responseInfo.innerHTML = 'SSE流式响应中...';
+            if (responseInfo) responseInfo.innerHTML = 'SSE流式響應中...';
 
-            // 显示响应头
+            // 顯示響應頭
             if (responseHeadersTable) {
                 responseHeadersTable.innerHTML = '';
                 response.headers.forEach((value, key) => {
@@ -4617,23 +4617,23 @@
                     const { value, done } = await reader.read();
 
                     if (done) {
-                        if (responseInfo) responseInfo.innerHTML = 'SSE流式响应已结束';
+                        if (responseInfo) responseInfo.innerHTML = 'SSE流式響應已結束';
                         return;
                     }
 
                     const chunk = decoder.decode(value, { stream: true });
-                    //console.log('收到数据块:', chunk);
+                    //console.log('收到數據塊:', chunk);
                     dataBuffer += chunk;
 
-                    // 处理SSE事件
+                    // 處理SSE事件
                     const lines = dataBuffer.split('\n');
                     dataBuffer = lines.pop() || '';
 
                     for (const line of lines) {
                         const trimmedLine = line.trim();
-                        // console.log('处理行:', trimmedLine);
+                        // console.log('處理行:', trimmedLine);
 
-                        // 显示所有非空行，不仅仅是data:开头的
+                        // 顯示所有非空行，不僅僅是data:開頭的
                         if (trimmedLine) {
                             if (trimmedLine.startsWith('data:')) {
                                 const data = trimmedLine.slice(5).trim();
@@ -4642,7 +4642,7 @@
                                     if (responseBody) responseBody.value = result;
                                 }
                             } else {
-                                // 显示非标准SSE格式的行
+                                // 顯示非標準SSE格式的行
                                 result += trimmedLine + '\n';
                                 if (responseBody) responseBody.value = result;
                             }
@@ -4651,8 +4651,8 @@
 
                     readStream();
                 } catch (err) {
-                    console.error('SSE读取错误:', err);
-                    if (responseInfo) responseInfo.innerHTML = 'SSE读取失败：' + err;
+                    console.error('SSE讀取錯誤:', err);
+                    if (responseInfo) responseInfo.innerHTML = 'SSE讀取失敗：' + err;
                 }
             }
 
@@ -4660,9 +4660,9 @@
         }
 
         /**
-         * 创建WebSocket消息体行
-         * 创建一个包含radio选择、类型选择、消息体输入、备注和删除按钮的WebSocket消息体行
-         * @returns {HTMLElement} 创建的WebSocket消息体行元素
+         * 創建WebSocket消息體行
+         * 創建一個包含radio選擇、類型選擇、消息體輸入、備注和刪除按鈕的WebSocket消息體行
+         * @returns {HTMLElement} 創建的WebSocket消息體行元素
          */
         function createWsBodyRow() {
             const row = document.createElement('div');
@@ -4671,17 +4671,17 @@
                 <input type="radio" name="wsBodyRadio">
                 <select class="ws-body-type">
                     <option value="text">文本</option>
-                    <option value="binary">二进制(Base64)</option>
+                    <option value="binary">二進制(Base64)</option>
                     <option value="file">文件</option>
                 </select>
                 <div class="ws-body-content">
-                    <textarea class="ws-body-text" placeholder="消息内容"></textarea>
+                    <textarea class="ws-body-text" placeholder="消息內容"></textarea>
                     <input type="file" class="ws-body-file file-input-ws">
                 </div>
-                <textarea class="body-remark" placeholder="备注"></textarea>
-                <button class="remove-btn" type="button" onclick="removeWsBodyRow(this)">删除</button>
+                <textarea class="body-remark" placeholder="備注"></textarea>
+                <button class="remove-btn" type="button" onclick="removeWsBodyRow(this)">刪除</button>
             `;
-            // 类型切换
+            // 類型切換
             const typeSelect = row.querySelector('.ws-body-type');
             const textArea = row.querySelector('.ws-body-text');
             const fileInput = row.querySelector('.ws-body-file');
@@ -4698,23 +4698,23 @@
         }
 
         /**
-         * 添加WebSocket消息体行
-         * 在WebSocket消息体容器中添加一个新的消息体行，如果是第一行则自动选中
+         * 添加WebSocket消息體行
+         * 在WebSocket消息體容器中添加一個新的消息體行，如果是第一行則自動選中
          */
         function addWsBodyRow() {
             const container = document.getElementById('wsBodyRows');
             const row = createWsBodyRow();
             container.appendChild(row);
-            // 如果是第一行，自动选中
+            // 如果是第一行，自動選中
             if (container.children.length === 1) {
                 row.querySelector('input[type="radio"]').checked = true;
             }
         }
 
         /**
-         * 删除WebSocket消息体行
-         * 删除指定的消息体行，如果删除的是选中的行且还有其他行，则选中第一行
-         * @param {HTMLElement} btn - 删除按钮元素
+         * 刪除WebSocket消息體行
+         * 刪除指定的消息體行，如果刪除的是選中的行且還有其他行，則選中第一行
+         * @param {HTMLElement} btn - 刪除按鈕元素
          */
         function removeWsBodyRow(btn) {
             const row = btn.closest('.body-row');
@@ -4730,13 +4730,13 @@
         }
 
         /**
-         * 发送WebSocket消息体
-         * 发送当前选中的WebSocket消息体行，根据类型处理（text直接发送，binary base64解码，file读取为二进制）
+         * 發送WebSocket消息體
+         * 發送當前選中的WebSocket消息體行，根據類型處理（text直接發送，binary base64解碼，file讀取為二進制）
          * @returns {Promise<void>}
          */
         async function sendWsBody() {
             if (!currentWS || currentWS.readyState !== 1) {
-                alert('WebSocket未连接');
+                alert('WebSocket未連接');
                 return;
             }
             const rows = document.querySelectorAll('#wsBodyRows .body-row');
@@ -4754,7 +4754,7 @@
                             const bin = Uint8Array.from(atob(val), c => c.charCodeAt(0));
                             currentWS.send(bin);
                         } catch (e) {
-                            alert('Base64解码失败');
+                            alert('Base64解碼失敗');
                         }
                     } else if (type === 'file') {
                         const fileInput = row.querySelector('.ws-body-file');
@@ -4763,22 +4763,22 @@
                             const buf = await file.arrayBuffer();
                             currentWS.send(buf);
                         } else {
-                            alert('请选择文件');
+                            alert('請選擇文件');
                         }
                     }
                     break;
                 }
             }
-            if (!found) alert('请选择要发送的消息行');
+            if (!found) alert('請選擇要發送的消息行');
         }
 
         /**
-         * 页面初始化
-         * 在DOM加载完成后执行所有初始化操作
+         * 頁面初始化
+         * 在DOM加載完成後執行所有初始化操作
          */
         document.addEventListener('DOMContentLoaded', async () => {
             try {
-                // 并行初始化所有组件
+                // 並行初始化所有組件
                 await Promise.all([
                     addFormDataRow(),
                     addFormRow(),
@@ -4790,11 +4790,11 @@
                     updateApiCollectionSelect()
                 ]);
 
-                // 恢复上次选中的标签页
+                // 恢覆上次選中的標簽頁
                 const lastActiveTab = StorageManager.get('lastActiveTab', 'history');
                 switchPanelTab(lastActiveTab);
             } catch (error) {
-                console.error('页面初始化失败:', error);
+                console.error('頁面初始化失敗:', error);
             }
         });
 
